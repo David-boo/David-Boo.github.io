@@ -2,7 +2,9 @@
 title: "Rosalind: A step-by-step Python solution to common bioinformatic problems"
 layout: post
 date: 2021-01-01 22:10
-tag: Bioinformatics; Python
+tag:
+- Bioinformatics
+- Python
 image: http://compeau.cbd.cmu.edu/wp-content/uploads/2016/08/rosalindlogo-1024x303.jpg
 headerImage: false
 projects: true
