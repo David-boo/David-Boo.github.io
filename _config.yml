@@ -1,9 +1,9 @@
 # main text of home
-name: John Doe
-bio: A Man who travels the world eating noodles
+name: David Boo
+bio: A Man who cambio 1
 
 # twitter summary info
-description: A blog about technology and stuff related
+description: A blog about asdfasf
 
 # if it's an external image, update below for true
 # better with square images
@@ -17,7 +17,7 @@ resume-external: true
 resume-url: https://google.com/?q=my+resume
 
 url: https://sergiokopplin.github.io/indigo
-# your url: https://USERNAME.github.io
+# your url: https://david-boo.github.io
 
 permalink: /:title/
 
@@ -38,7 +38,7 @@ facebook: myfacebook
 twitter: mytwitter
 # instagram: myinstagram
 # pinterest: mypinterest
-# linkedin: mylinkedin
+linkedin: mylinkedin
 # youtube: myyoutube
 # spotify: myspotify
 github: mygithub
@@ -47,14 +47,14 @@ github: mygithub
 # stackoverflow: 7044681/mystackoverflow
 # quora: userquora
 # reddit: username
-medium: medium
+# medium: medium
 # vimeo: myvimeo
 # lanyrd: mylanyrd
 email: myemail@gmail.com
 
 authors:
   johndoe:
-    name: John Doe
+    name: David Boo 
     bio: A Man who travels the world eating noodles
     external-image: false
     picture: assets/images/profile.jpg
@@ -84,7 +84,7 @@ projects: true
 
 # if you don't need "about" or "blog", comment them out below
 about: true
-blog: true
+# blog: true
 
 # do you want to show the "read time" of the posts?
 read-time: true
