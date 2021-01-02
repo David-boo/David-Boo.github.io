@@ -1,16 +1,9 @@
 # main text of home
-name: David Boo
-<<<<<<< HEAD
-bio: A Man who cambio 1
+name: David Boo 
+bio: A Man who changeagawhfppa
 
 # twitter summary info
-description: A blog about asdfasf
-=======
-bio: A Man who aweffawef
-
-# twitter summary info
-description: twitter summary info
->>>>>>> 9d23a643f54e5a4288079305dad3ea7f1fbf13b4
+description: A blog about asegaeg
 
 # if it's an external image, update below for true
 # better with square images
@@ -23,13 +16,8 @@ resume: true
 resume-external: true
 resume-url: https://google.com/?q=my+resume
 
-<<<<<<< HEAD
-url: https://sergiokopplin.github.io/indigo
-# your url: https://david-boo.github.io
-=======
-url: https://David-Boo.github.io/
+url: https://david-boo.github.io/
 # your url: https://USERNAME.github.io
->>>>>>> 9d23a643f54e5a4288079305dad3ea7f1fbf13b4
 
 permalink: /:title/
 
@@ -46,8 +34,8 @@ disqus:
   categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-#facebook: myfacebook
-#twitter: mytwitter
+facebook: myfacebook
+twitter: mytwitter
 # instagram: myinstagram
 # pinterest: mypinterest
 linkedin: mylinkedin
@@ -59,25 +47,15 @@ github: mygithub
 # stackoverflow: 7044681/mystackoverflow
 # quora: userquora
 # reddit: username
-<<<<<<< HEAD
 # medium: medium
-=======
-#medium: medium
->>>>>>> 9d23a643f54e5a4288079305dad3ea7f1fbf13b4
 # vimeo: myvimeo
 # lanyrd: mylanyrd
-email: david@gmail.com
+email: myemail@gmail.com
 
 authors:
-<<<<<<< HEAD
   johndoe:
-    name: David Boo 
+    name: John Doe
     bio: A Man who travels the world eating noodles
-=======
-  DavidBoo:
-    name: David Boo
-    bio: A Man who travels ??
->>>>>>> 9d23a643f54e5a4288079305dad3ea7f1fbf13b4
     external-image: false
     picture: assets/images/profile.jpg
     twitter: johndoe
@@ -105,13 +83,8 @@ pagination:
 projects: true
 
 # if you don't need "about" or "blog", comment them out below
-<<<<<<< HEAD
 about: true
-# blog: true
-=======
-#about: true
-#blog: true
->>>>>>> 9d23a643f54e5a4288079305dad3ea7f1fbf13b4
+blog: true
 
 # do you want to show the "read time" of the posts?
 read-time: true
