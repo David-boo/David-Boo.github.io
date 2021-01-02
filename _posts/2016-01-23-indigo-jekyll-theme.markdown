@@ -1,6 +1,6 @@
 ---
 title: ":ramen: Rosalind: A step-by-step python solution to common bioinformatic problems"
-layout: post
+layout: default
 date: 2016-01-23 22:10
 tag: jekyll
 image: https://sergiokopplin.github.io/indigo/assets/images/jekyll-logo-light-solid.png
