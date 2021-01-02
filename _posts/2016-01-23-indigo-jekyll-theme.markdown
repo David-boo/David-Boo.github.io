@@ -16,8 +16,9 @@ externalLink: false
 ---
 
 Rosalind problems blablabla
-|**ID**|**Title**|**Python Solution**|
-|:--|:--|:--|
+
+**ID**|**Title**|**Python Solution**
+:-----:|:-----:|:-----:
 |DNA|[Counting DNA Nucleotides](http://rosalind.info/problems/dna/)|[46923](http://rosalind.info/problems/dna/recent/)|
 |RNA|[Transcribing DNA into RNA](http://rosalind.info/problems/rna/)|[41858](http://rosalind.info/problems/rna/recent/)|
 |REVC|[Complementing a Strand of DNA](http://rosalind.info/problems/revc/)|[37925](http://rosalind.info/problems/revc/recent/)|
