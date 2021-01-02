@@ -2,7 +2,7 @@
 title: "Rosalind: A step-by-step Python solution to common bioinformatic problems"
 layout: default
 date: 2021-01-01 22:10
-tag: Bioinformatics, Python
+tag: Bioinformatics; Python
 image: https://sergiokopplin.github.io/indigo/assets/images/jekyll-logo-light-solid.png
 headerImage: true
 projects: true
@@ -13,11 +13,9 @@ author: David Boo
 externalLink: false
 ---
 
-#![Screenshot](https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png)
+![Screenshot](https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png)
 
 Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergiokopplin.github.io/indigo/). This is a simple and minimalist template for Jekyll for those who likes to eat noodles.
-
-<p align="center">
 
 **ID**|**Title**|**Python solution**
 :-----:|:-----:|:-----:
@@ -126,8 +124,6 @@ KSIM|Finding All Similar Motifs|84
 LAFF|Local Alignment with Affine Gap Penalty|186
 OSYM|Isolating Symbols in Alignments|138
 RSUB|Identifying Reversing Substitutions|103
-
-</p>
 
 ---
 
