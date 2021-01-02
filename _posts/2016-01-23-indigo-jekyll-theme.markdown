@@ -3,7 +3,7 @@ title: "Rosalind: A step-by-step Python solution to common bioinformatic problem
 layout: post
 date: 2021-01-01 22:10
 tag: Bioinformatics; Python
-image: https:///David-Boo.github.io/blob/gh-pages/assets/images/Rosalind_Logo.jpg
+image: http://compeau.cbd.cmu.edu/wp-content/uploads/2016/08/rosalindlogo-1024x303.jpg
 headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
