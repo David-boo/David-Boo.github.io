@@ -17,6 +17,8 @@ externalLink: false
 
 Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergiokopplin.github.io/indigo/). This is a simple and minimalist template for Jekyll for those who likes to eat noodles.
 
+<center>
+
 | **ID** | **Title**                                                   | **Python solution** |
 |:------:|:-----------------------------------------------------------:|:-------------------:|
 | DNA    | Counting DNA Nucleotides                                    | 46923               |
@@ -125,6 +127,7 @@ Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergioko
 | OSYM   | Isolating Symbols in Alignments                             | 138                 |
 | RSUB   | Identifying Reversing Substitutions                         | 103                 |
 
+</center>
 
 ---
 
