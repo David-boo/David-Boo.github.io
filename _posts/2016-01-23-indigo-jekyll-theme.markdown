@@ -1,5 +1,5 @@
 ---
-title: ":ramen: Indigo, minimalist jekyll theme"
+title: ":ramen: Rosalind: A step-by-step python solution to common bioinformatic problems"
 layout: post
 date: 2016-01-23 22:10
 tag: jekyll
