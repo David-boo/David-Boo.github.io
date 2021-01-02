@@ -4,7 +4,7 @@ layout: post
 date: 2021-01-01 22:10
 tag: Bioinformatics; Python
 image: https://github.com/David-boo/David-Boo.github.io/blob/gh-pages/assets/images/Rosalind_Logo.jpg
-headerImage: true
+headerImage: false
 projects: true
 hidden: true # don't count this post in blog pagination
 description: "A step-by-step Python solution to common bioinformatic problems."
