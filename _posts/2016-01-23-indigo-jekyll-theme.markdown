@@ -19,7 +19,7 @@ Rosalind problems blablabla
 
 | **ID** | **Title**                                                   | **Python solution** |
 |:------:|:-----------------------------------------------------------:|:-------------------:|
-| DNA    | Counting DNA Nucleotides                                    | 46923               |
+| DNA    | [Counting DNA Nucleotides](http://rosalind.info/problems/dna/)                                    | 46923               |
 | RNA    | Transcribing DNA into RNA                                   | 41858               |
 | REVC   | Complementing a Strand of DNA                               | 37925               |
 | FIB    | Rabbits and Recurrence Relations                            | 21891               |
