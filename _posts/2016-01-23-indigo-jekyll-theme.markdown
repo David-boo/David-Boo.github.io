@@ -17,7 +17,7 @@ externalLink: false
 
 Rosalind problems blablabla
 
-|**ID**|**Title**|**Python Solution**|
+|ID|Title|Python Solution|
 |:-----:|:-----:|:-----:|
 |DNA|[Counting DNA Nucleotides](http://rosalind.info/problems/dna/)|[46923](http://rosalind.info/problems/dna/recent/)|
 |RNA|[Transcribing DNA into RNA](http://rosalind.info/problems/rna/)|[41858](http://rosalind.info/problems/rna/recent/)|
@@ -142,7 +142,7 @@ What has inside?
 [Check it out](https://sergiokopplin.github.io/indigo/) here.
 If you need some help, just [tell me](https://github.com/sergiokopplin/indigo/issues).
 
-|ID|Description / Title|Solved By|
+|ID|Description / Title|Python Solution|
 |:--|:--|:--|
 |1|[Multiples of 3 and 5](https://projecteuler.net/problem=1)|965618|
 |2|[Even Fibonacci numbers](https://projecteuler.net/problem=2)|769012|
