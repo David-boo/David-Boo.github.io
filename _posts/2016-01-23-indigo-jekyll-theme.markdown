@@ -3,8 +3,8 @@ title: "Rosalind: A step-by-step Python solution to common bioinformatic problem
 layout: post
 date: 2021-01-01 22:10
 tag: Bioinformatics; Python
-image: https://github.com/David-boo/David-Boo.github.io/blob/gh-pages/assets/images/Rosalind_Logo.jpg
-headerImage: false
+image: https:///David-Boo.github.io/blob/gh-pages/assets/images/Rosalind_Logo.jpg
+headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
 description: "A step-by-step Python solution to common bioinformatic problems."
@@ -16,8 +16,6 @@ externalLink: false
 ![Screenshot](https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png)
 
 Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergiokopplin.github.io/indigo/). This is a simple and minimalist template for Jekyll for those who likes to eat noodles.
-
-<center>
 
 | **ID** | **Title**                                                   | **Python solution** |
 |:------:|:-----------------------------------------------------------:|:-------------------:|
@@ -126,8 +124,6 @@ Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergioko
 | LAFF   | Local Alignment with Affine Gap Penalty                     | 186                 |
 | OSYM   | Isolating Symbols in Alignments                             | 138                 |
 | RSUB   | Identifying Reversing Substitutions                         | 103                 |
-
-</center>
 
 ---
 
