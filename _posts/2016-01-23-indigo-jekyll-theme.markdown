@@ -1,6 +1,6 @@
 ---
 title: "Rosalind: A step-by-step python solution to common bioinformatic problems"
-layout: post
+layout: default
 date: 2021-01-01 22:10
 tag: Bioinformatics, Python
 image: https://sergiokopplin.github.io/indigo/assets/images/jekyll-logo-light-solid.png
