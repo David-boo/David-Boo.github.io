@@ -1,5 +1,5 @@
 ---
-title: "Rosalind: A step-by-step Python solution to common bioinformatic problems"
+title: "aaa"
 layout: post
 date: 2021-01-01 22:10
 tag:
