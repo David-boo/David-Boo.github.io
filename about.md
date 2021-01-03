@@ -18,31 +18,8 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-<table border="0">
- <tr>
-    <td><b style="font-size:30px">Skills & Fields of Interest</b></td>
-    <td><b style="font-size:30px">Title 2</b></td>
- </tr>
- <tr>
- <ul class="skill-list">
-    <td><li>Genome analysis</li>
-	<li>Sequence analysis</li>
-	<li>Phylogenetics</li>
-	<li>Structural bioinformatics</li></td>
-<ul class="skill-list2">
-    <td><li>Gene expression</li>
-	<li>Genetics and population analysis</li>
-	<li>Systems biology</li>
-	<li>Data and text mining</li>
-	<li>Databases and ontologies</li>
-	<li>Bioimage informatics</li>
-	<li>Statistics</li>
-	<li>Matlab, R programming</li>
-	<li>Python programming</li></td>
- </tr>
-</table>
-
-<ul class="skill-list2">
+<h2>Skills & Areas of Interest</h2>
+<ul class="skill-list">
 	<li>Genome analysis</li>
 	<li>Sequence analysis</li>
 	<li>Phylogenetics</li>
@@ -58,10 +35,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	<li>Python programming</li>
 </ul>
 
-<h2>Projects</h2>
-
-<ul>
-	<li><a href="https://github.com/">Lorem Lorem</a></li>
-	<li><a href="https://github.com/">Ipsum Dolor</a></li>
-	<li><a href="https://github.com/">Dolor Lorem</a></li>
-</ul>
+Feel free to contact me for any question you may have. You can find me there:
+linkedin: davidboolamas
+github: david-boo
+email: david.boo.lamas@gmail.com
