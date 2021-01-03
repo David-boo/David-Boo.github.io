@@ -6,7 +6,7 @@ tag:
 - Bioinformatics
 - Python
 image: /assets/images/Rosalind_Logo.jpg
-headerImage: true
+headerImage: false
 projects: true
 hidden: true # don't count this post in blog pagination
 description: "A step-by-step Python solution to common bioinformatic problems."
@@ -15,7 +15,7 @@ author: davidboo
 externalLink: false
 ---
 
-Euler problems blablabla
+Rosalind problems blablablakbkajbpjajeipafjajwefjoajwgjpawjegjawe
 
 ---
 
