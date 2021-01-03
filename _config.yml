@@ -81,7 +81,7 @@ pagination:
 
 
 # if you don't need "about" or "blog", comment them out below
-about me: true
+about: true
 blog: true
 
 # if you don't need projects, comment the *projects* configs below
