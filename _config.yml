@@ -3,12 +3,12 @@ name: David Boo
 bio: Where biology, informatics & statistics intersect
 
 # twitter summary info
-description: A blog about asegaeg
+description: My personal blog and portfolio
 
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: assets/images/profile.jpg
+picture: assets/images/profile_pic.jpg
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
