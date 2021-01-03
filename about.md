@@ -6,8 +6,7 @@ layout: page
 
 <p>Molecular biology has changed and grown exponentially in the past decades. Genomic technologies are generating an unprecedent amount of information and the scientific community has to adapt and answer the challenge of data acquisition, storage, analysis and integration. In this genomic era, the need to effectively incorporate computers into research has never been higher. </p>
 
-
-<span class="evidence">I'm David Boo, a biotechnologist who strives to contribute with my grain of sand to improve research and ultimately people's lives.</span> My invaluable hybrid field of knowledge
+<span class="evidence">I'm David Boo, a biotechnologist who strives to contribute with my grain of sand to improve research and ultimately, people's lives.</span> I have a strong theoretical and practical background on molecular biology, bioinformatics and clinical research, as well as huge interest on programming and data science. My multidisciplinar profile fits perfectly in this hybrid field of knowledge
 
 <p>This website is just a small space in which I can show some of my recent projects. Most of these have been designed to solve common problems, designed with a very practical point of view. However, all projects are open to group collaboration and team effort: this is why I include step-by-step explanations to coding and also a brief explanation of common biological terms. Combined with the blog entries, <span class="evidence">I aspire to communicate effectively and manage to create a community in which we can all learn and grow, both personally and professionally.</span></p>
 
