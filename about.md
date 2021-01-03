@@ -30,9 +30,12 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	<li>Databases and ontologies</li>
 	<li>High-throughput image analysis</li>
 	<li>Computational biology</li>
+	<li>Data analysis</li>
 	<li>Statistics</li>
 	<li>Matlab, R programming</li>
 	<li>Python programming</li>
 </ul>
+
+---
 
 Feel free to [reach out](https://david-boo.github.io/) if you have any questions or inquiries. I'd love to hear from you!
