@@ -20,22 +20,19 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 <h2>Skills & Areas of Interest</h2>
 <ul class="skill-list">
-	<li>Genome analysis</li>
-	<li>Sequence analysis</li>
+	<li>Genome analysis & Sequence analysis</li>
 	<li>Phylogenetics</li>
 	<li>Structural bioinformatics</li>
 	<li>Gene expression</li>
 	<li>Genetics and population analysis</li>
 	<li>Systems biology</li>
-	<li>Data and text mining</li>
+	<li>Genome Wide Analysis Studies (GWAS)</li>
 	<li>Databases and ontologies</li>
-	<li>Bioimage informatics</li>
+	<li>High-throughput image analysis</li>
+	<li>Computational biology</li>
 	<li>Statistics</li>
 	<li>Matlab, R programming</li>
 	<li>Python programming</li>
 </ul>
 
-Feel free to contact me for any question you may have. You can find me there:
-linkedin: davidboolamas
-github: david-boo
-email: david.boo.lamas@gmail.com
+Feel free to [reach out](https://david-boo.github.io/) if you have any questions or inquiries. I'd love to hear from you!
