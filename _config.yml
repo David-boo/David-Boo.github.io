@@ -59,12 +59,12 @@ authors:
     external-image: false
     picture: assets/images/profile.jpg
     twitter: johndoe
-  jamesfoster:
-    name: James Foster
-    bio: A Man who develops software with coffee
+  davidboo:
+    name: David Boo
+    bio: Where biology, informatics & statistics intersect
     external-image: false
-    picture: assets/images/james.jpg
-    twitter: jamesfoster
+    picture: assets/images/profile_pic.jpg
+    linkedin: davidboolamas
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
