@@ -4,15 +4,10 @@ layout: page
 ---
 ![Profile Image]({% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %})
 
-<p>Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Molecular biology has changed and grown exponentially in the past decades. Genomic technologies are generating an unprecedent amount of information and the scientific community has to adapt and answer the challenge of data acquisition, storage, analysis and integration. In this genomic era, the need to effectively incorporate computers into research has never been higher. </p>
 
 
-<span class="evidence">My name is David Boo, I'm a biotechnologist who blablabla.</span> 
+<span class="evidence">I'm David Boo, a biotechnologist who strives to contribute with my grain of sand to improve research and ultimately people's lives.</span> invaluable hybrid field of knowledge
 
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
