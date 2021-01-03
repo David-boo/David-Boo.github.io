@@ -11,9 +11,9 @@ layout: page
 
 <p>This website is just a small space in which I can show some of my recent projects. Most of these have been designed to solve common problems, designed with a very practical point of view. However, all projects are open to group collaboration and team effort: this is why I include step-by-step explanations to coding and also a brief explanation of common biological terms. Combined with the blog entries, <span class="evidence">I aspire to communicate effectively and manage to create a community in which we can all learn and grow, both personally and professionally.</span></p>
 
-> *There is a formula: 100% of me is nothing compared to 1% of the whole team.
-<br>
-- Eliud Kipchoge*
+> *There is a formula: 100% of me is nothing compared to 1% of the whole team.*
+>
+> -- <cite>Eliud Kipchoge</cite>
 
 ---
 
