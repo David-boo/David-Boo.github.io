@@ -1,6 +1,6 @@
 # main text of home
 name: David Boo 
-bio: A Man who changeagawhfppa
+bio: Where biology, informatics & statistics intersect
 
 # twitter summary info
 description: A blog about asegaeg
@@ -12,7 +12,7 @@ picture: assets/images/profile.jpg
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
-resume: true
+resume: false
 resume-external: true
 resume-url: https://google.com/?q=my+resume
 
@@ -34,14 +34,14 @@ disqus:
   categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-facebook: myfacebook
-twitter: mytwitter
+# facebook: myfacebook
+# twitter: mytwitter
 # instagram: myinstagram
 # pinterest: mypinterest
-linkedin: mylinkedin
+linkedin: davidboolamas
 # youtube: myyoutube
 # spotify: myspotify
-github: mygithub
+github: david-boo
 # gitlab: mygitlab
 # lastfm: mylastfm
 # stackoverflow: 7044681/mystackoverflow
@@ -50,7 +50,7 @@ github: mygithub
 # medium: medium
 # vimeo: myvimeo
 # lanyrd: mylanyrd
-email: myemail@gmail.com
+email: david.boo.lamas@gmail.com
 
 authors:
   johndoe:
