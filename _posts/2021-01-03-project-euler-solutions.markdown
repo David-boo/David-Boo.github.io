@@ -1,16 +1,16 @@
 ---
-title: "Project Euler: a Python approach to complex mathematical problems"
+title: "Project Euler: a Python (beginner friendly) approach to complex mathematical challenges"
 layout: post
 date: 2021-01-03 22:10
 tag:
 - Python
 - Mathematics
 - Statistics
-image: http://compeau.cbd.cmu.edu/wp-content/uploads/2016/08/rosalindlogo-1024x303.jpg
+image: /assets/images/euler_painting.png
 headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
-description: "A step-by-step Python solution to common bioinformatic problems."
+description: "A step-by-step Python solution to common mathematical problems."
 category: project
 author: davidboo
 externalLink: false
