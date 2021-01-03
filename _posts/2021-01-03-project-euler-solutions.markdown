@@ -7,12 +7,12 @@ tag:
 - Mathematics
 - Statistics
 image: http://compeau.cbd.cmu.edu/wp-content/uploads/2016/08/rosalindlogo-1024x303.jpg
-headerImage: false
+headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
 description: "A step-by-step Python solution to common bioinformatic problems."
 category: project
-author: DavidBoo
+author: davidboo
 externalLink: false
 ---
 
