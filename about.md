@@ -8,7 +8,7 @@ layout: page
 
 <span class="evidence">I'm David Boo, a biotechnologist who strives to contribute with my grain of sand to improve research and ultimately, people's lives.</span> I have a strong theoretical and practical background on molecular biology, bioinformatics and clinical research, as well as huge interest on programming and data science. My multidisciplinar profile, combined with a strong work ethic and motivation, fits perfectly in this hybrid, quickly changing field of knowledge. 
 
-<p>This website is just a small space in which I can show some of my recent projects. Most of these have been designed to solve common problems, designed with a very practical point of view. However, all projects are open to group collaboration and team effort: this is why I include step-by-step explanations to coding and also a brief explanation of common biological terms. Combined with blog entries, <span class="evidence">I aspire to communicate effectively and manage to create a community in which we can all learn and grow, both personally and professionally.</span></p>
+<p>This website is just a small space in which I can show some of my recent projects. Most of these have been created to solve common problems, designed with a very practical point of view. However, all projects are open to group collaboration and team effort: this is why I include step-by-step explanations to coding and also a brief explanation of common biological terms. Combined with blog entries, <span class="evidence">I aspire to communicate effectively and manage to create a community in which we can all learn and grow, both personally and professionally.</span></p>
 
 > *There is a formula: 100% of me is nothing compared to 1% of the whole team.*
 >
