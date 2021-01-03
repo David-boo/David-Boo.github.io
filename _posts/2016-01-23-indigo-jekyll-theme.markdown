@@ -11,7 +11,7 @@ projects: true
 hidden: true # don't count this post in blog pagination
 description: "A step-by-step Python solution to common bioinformatic problems."
 category: project
-author: David Boo
+author: davidboo
 externalLink: false
 ---
 
