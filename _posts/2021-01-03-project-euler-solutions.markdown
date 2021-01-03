@@ -19,7 +19,8 @@ externalLink: false
 Euler problems blablabla
 
 ---
-<div align="center">
+
+
 |ID|Description / Title|Python Solution|
 |:--|:--|:--|
 |1|[Multiples of 3 and 5](https://projecteuler.net/problem=1)|965618|
@@ -122,4 +123,5 @@ Euler problems blablabla
 |98|[Anagramic squares](https://projecteuler.net/problem=98)||
 |99|[Largest exponential](https://projecteuler.net/problem=99)||
 |100|[Arranged probability](https://projecteuler.net/problem=100)||
-</div>
+
+
