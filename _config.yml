@@ -73,7 +73,7 @@ width: normal
 
 # if you do/don't need pagination, toggle 'enabled' between true/false below
 pagination:
-  enabled: false
+  enabled: true
   sort_reverse: true # display recent posts first
   title: ":title" # Changing this will mess up the header display logic
   per_page: 5
@@ -81,14 +81,13 @@ pagination:
 
 
 # if you don't need "about" or "blog", comment them out below
-about: true
 
-# if you don't need projects, comment the *projects* configs below
+
 projects: true
 
 blog: true
 
-
+about: true
 # do you want to show the "read time" of the posts?
 read-time: true
 
