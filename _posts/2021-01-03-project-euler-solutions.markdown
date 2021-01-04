@@ -23,25 +23,25 @@ Euler problems "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
 
 |ID|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description / Title&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|Python Solution|
 |:-----|:-----:|-----:|
-|1|[Multiples of 3 and 5](https://projecteuler.net/problem=1)|965618|
-|2|[Even Fibonacci numbers](https://projecteuler.net/problem=2)|769012|
-|3|[Largest prime factor](https://projecteuler.net/problem=3)|551704|
-|4|[Largest palindrome product](https://projecteuler.net/problem=4)|487523|
-|5|[Smallest multiple](https://projecteuler.net/problem=5)|491035|
-|6|[Sum square difference](https://projecteuler.net/problem=6)|494097|
-|7|[10001st prime](https://projecteuler.net/problem=7)|422391|
-|8|[Largest product in a series](https://projecteuler.net/problem=8)|353104|
-|9|[Special Pythagorean triplet](https://projecteuler.net/problem=9)|358465|
-|10|[Summation of primes](https://projecteuler.net/problem=10)|328126|
-|11|[Largest product in a grid](https://projecteuler.net/problem=11)|234638|
-|12|[Highly divisible triangular number](https://projecteuler.net/problem=12)|221339|
-|13|[Large sum](https://projecteuler.net/problem=13)|226561|
-|14|[Longest Collatz sequence](https://projecteuler.net/problem=14)|226871|
-|15|[Lattice paths](https://projecteuler.net/problem=15)|186929|
-|16|[Power digit sum](https://projecteuler.net/problem=16)|229256|
-|17|[Number letter counts](https://projecteuler.net/problem=17)|151315|
-|18|[Maximum path sum I](https://projecteuler.net/problem=18)|144753|
-|19|[Counting Sundays](https://projecteuler.net/problem=19)|134519|
+|1|[Multiples of 3 and 5](https://projecteuler.net/problem=1)|[Euler_001](https://github.com/David-boo/Euler/blob/main/Euler_001.py)|
+|2|[Even Fibonacci numbers](https://projecteuler.net/problem=2)|[Euler_002](https://github.com/David-boo/Euler/blob/main/Euler_002.py)|
+|3|[Largest prime factor](https://projecteuler.net/problem=3)|[Euler_003](https://github.com/David-boo/Euler/blob/main/Euler_003.py)|
+|4|[Largest palindrome product](https://projecteuler.net/problem=4)|[Euler_004](https://github.com/David-boo/Euler/blob/main/Euler_004.py)|
+|5|[Smallest multiple](https://projecteuler.net/problem=5)|[Euler_005](https://github.com/David-boo/Euler/blob/main/Euler_005.py)|
+|6|[Sum square difference](https://projecteuler.net/problem=6)|[Euler_006](https://github.com/David-boo/Euler/blob/main/Euler_006.py)|
+|7|[10001st prime](https://projecteuler.net/problem=7)|[Euler_007](https://github.com/David-boo/Euler/blob/main/Euler_007.py)|
+|8|[Largest product in a series](https://projecteuler.net/problem=8)|[Euler_008](https://github.com/David-boo/Euler/blob/main/Euler_008.py)|
+|9|[Special Pythagorean triplet](https://projecteuler.net/problem=9)|[Euler_009](https://github.com/David-boo/Euler/blob/main/Euler_009.py)|
+|10|[Summation of primes](https://projecteuler.net/problem=10)|[Euler_010](https://github.com/David-boo/Euler/blob/main/Euler_010.py)|
+|11|[Largest product in a grid](https://projecteuler.net/problem=11)|[Euler_011](https://github.com/David-boo/Euler/blob/main/Euler_011.py)|
+|12|[Highly divisible triangular number](https://projecteuler.net/problem=12)|[Euler_012](https://github.com/David-boo/Euler/blob/main/Euler_012.py)|
+|13|[Large sum](https://projecteuler.net/problem=13)|[Euler_013](https://github.com/David-boo/Euler/blob/main/Euler_013.py)|
+|14|[Longest Collatz sequence](https://projecteuler.net/problem=14)|[Euler_014](https://github.com/David-boo/Euler/blob/main/Euler_014.py)|
+|15|[Lattice paths](https://projecteuler.net/problem=15)|[Euler_015](https://github.com/David-boo/Euler/blob/main/Euler_015.py)|
+|16|[Power digit sum](https://projecteuler.net/problem=16)|[Euler_016](https://github.com/David-boo/Euler/blob/main/Euler_016.py)|
+|17|[Number letter counts](https://projecteuler.net/problem=17)|[Euler_017](https://github.com/David-boo/Euler/blob/main/Euler_017.py)|
+|18|[Maximum path sum I](https://projecteuler.net/problem=18)|[Euler_018](https://github.com/David-boo/Euler/blob/main/Euler_018.py)|
+|19|[Counting Sundays](https://projecteuler.net/problem=19)|[Euler_019](https://github.com/David-boo/Euler/blob/main/Euler_019.py)|
 |20|[Factorial digit sum](https://projecteuler.net/problem=20)||
 |21|[Amicable numbers](https://projecteuler.net/problem=21)||
 |22|[Names scores](https://projecteuler.net/problem=22)||
