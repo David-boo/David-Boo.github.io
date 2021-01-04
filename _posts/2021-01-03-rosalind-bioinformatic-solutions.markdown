@@ -22,19 +22,19 @@ Rosalind problems blablablakbkajbpjajeipafjajwefjoajwgjpawjegjawe
 
 |ID|Title|Python Solution|
 |:-----|:-----:|-----:|
-|DNA|[Counting DNA Nucleotides](http://rosalind.info/problems/dna/)|[46923](http://rosalind.info/problems/dna/recent/)|
-|RNA|[Transcribing DNA into RNA](http://rosalind.info/problems/rna/)|[41858](http://rosalind.info/problems/rna/recent/)|
-|REVC|[Complementing a Strand of DNA](http://rosalind.info/problems/revc/)|[37925](http://rosalind.info/problems/revc/recent/)|
-|FIB|[Rabbits and Recurrence Relations](http://rosalind.info/problems/fib/)|[21891](http://rosalind.info/problems/fib/recent/)|
-|GC|[Computing GC Content](http://rosalind.info/problems/gc/)|[22042](http://rosalind.info/problems/gc/recent/)|
-|HAMM|[Counting Point Mutations](http://rosalind.info/problems/hamm/)|[24752](http://rosalind.info/problems/hamm/recent/)|
-|IPRB|[Mendel's First Law](http://rosalind.info/problems/iprb/)|[14627](http://rosalind.info/problems/iprb/recent/)|
-|PROT|[Translating RNA into Protein](http://rosalind.info/problems/prot/)|[19392](http://rosalind.info/problems/prot/recent/)|
-|SUBS|[Finding a Motif in DNA](http://rosalind.info/problems/subs/)|[19740](http://rosalind.info/problems/subs/recent/)|
-|CONS|[Consensus and Profile](http://rosalind.info/problems/cons/)|[10903](http://rosalind.info/problems/cons/recent/)|
-|FIBD|[Mortal Fibonacci Rabbits](http://rosalind.info/problems/fibd/)|[9319](http://rosalind.info/problems/fibd/recent/)|
-|IEV|[Calculating Expected Offspring](http://rosalind.info/problems/iev/)|[8424](http://rosalind.info/problems/iev/recent/)|
-|LIA|[Independent Alleles](http://rosalind.info/problems/lia/)|[4471](http://rosalind.info/problems/lia/recent/)|
+|DNA|[Counting DNA Nucleotides](http://rosalind.info/problems/dna/)|[Rosalind_DNA](https://github.com/David-boo/Rosalind/blob/main/Rosalind_DNA.py)|
+|RNA|[Transcribing DNA into RNA](http://rosalind.info/problems/rna/)|[Rosalind_RNA](https://github.com/David-boo/Rosalind/blob/main/Rosalind_RNA.py)|
+|REVC|[Complementing a Strand of DNA](http://rosalind.info/problems/revc/)|[Rosalind_REVC](https://github.com/David-boo/Rosalind/blob/main/Rosalind_REVC.py))|
+|FIB|[Rabbits and Recurrence Relations](http://rosalind.info/problems/fib/)|[Rosalind_FIB](https://github.com/David-boo/Rosalind/blob/main/Rosalind_FIB.py)|
+|GC|[Computing GC Content](http://rosalind.info/problems/gc/)|[Rosalind_GC](https://github.com/David-boo/Rosalind/blob/main/Rosalind_GC.py)|
+|HAMM|[Counting Point Mutations](http://rosalind.info/problems/hamm/)|[Rosalind_HAMM](https://github.com/David-boo/Rosalind/blob/main/Rosalind_HAMM.py)|
+|IPRB|[Mendel's First Law](http://rosalind.info/problems/iprb/)|[Rosalind_IPRB](https://github.com/David-boo/Rosalind/blob/main/Rosalind_IPRB.py)|
+|PROT|[Translating RNA into Protein](http://rosalind.info/problems/prot/)|[Rosalind_PROT](https://github.com/David-boo/Rosalind/blob/main/Rosalind_PROT.py)|
+|SUBS|[Finding a Motif in DNA](http://rosalind.info/problems/subs/)|[Rosalind_SUBS](https://github.com/David-boo/Rosalind/blob/main/Rosalind_SUBS.py)|
+|CONS|[Consensus and Profile](http://rosalind.info/problems/cons/)|[Rosalind_CONS](https://github.com/David-boo/Rosalind/blob/main/Rosalind_CONS.py)|
+|FIBD|[Mortal Fibonacci Rabbits](http://rosalind.info/problems/fibd/)|[Rosalind_FIBD](https://github.com/David-boo/Rosalind/blob/main/Rosalind_FIBD.py)|
+|IEV|[Calculating Expected Offspring](http://rosalind.info/problems/iev/)|[Rosalind_IEV](https://github.com/David-boo/Rosalind/blob/main/Rosalind_IEV.py)|
+|LIA|[Independent Alleles](http://rosalind.info/problems/lia/)|[Rosalind_LIA](https://github.com/David-boo/Rosalind/blob/main/Rosalind_LIA.py)|
 |GRPH|[Overlap Graphs](http://rosalind.info/problems/grph/)|[8898](http://rosalind.info/problems/grph/recent/)|
 |LCSM|[Finding a Shared Motif](http://rosalind.info/problems/lcsm/)||
 |MPRT|[Finding a Protein Motif](http://rosalind.info/problems/mprt/)||
