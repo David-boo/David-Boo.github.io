@@ -71,6 +71,9 @@ authors:
 # normal = 560px / large = 810px
 width: normal
 
+
+
+
 # if you do/don't need pagination, toggle 'enabled' between true/false below
 pagination:
   enabled: true
@@ -82,12 +85,13 @@ pagination:
 
 # if you don't need "about" or "blog", comment them out below
 
+about: true
 
 projects: true
 
 blog: true
 
-about: true
+
 # do you want to show the "read time" of the posts?
 read-time: true
 
