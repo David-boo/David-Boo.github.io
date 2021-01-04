@@ -24,7 +24,7 @@ Rosalind problems blablablakbkajbpjajeipafjajwefjoajwgjpawjegjawe
 |:-----|:-----:|-----:|
 |DNA|[Counting DNA Nucleotides](http://rosalind.info/problems/dna/)|[Rosalind_DNA](https://github.com/David-boo/Rosalind/blob/main/Rosalind_DNA.py)|
 |RNA|[Transcribing DNA into RNA](http://rosalind.info/problems/rna/)|[Rosalind_RNA](https://github.com/David-boo/Rosalind/blob/main/Rosalind_RNA.py)|
-|REVC|[Complementing a Strand of DNA](http://rosalind.info/problems/revc/)|[Rosalind_REVC](https://github.com/David-boo/Rosalind/blob/main/Rosalind_REVC.py))|
+|REVC|[Complementing a Strand of DNA](http://rosalind.info/problems/revc/)|[Rosalind_REVC](https://github.com/David-boo/Rosalind/blob/main/Rosalind_REVC.py)|
 |FIB|[Rabbits and Recurrence Relations](http://rosalind.info/problems/fib/)|[Rosalind_FIB](https://github.com/David-boo/Rosalind/blob/main/Rosalind_FIB.py)|
 |GC|[Computing GC Content](http://rosalind.info/problems/gc/)|[Rosalind_GC](https://github.com/David-boo/Rosalind/blob/main/Rosalind_GC.py)|
 |HAMM|[Counting Point Mutations](http://rosalind.info/problems/hamm/)|[Rosalind_HAMM](https://github.com/David-boo/Rosalind/blob/main/Rosalind_HAMM.py)|
