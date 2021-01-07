@@ -26,6 +26,7 @@ Knowing this, it's no surprise that Euler has become an idol and a role model to
 
 In this page you will find my personal solutions to the problems, using only Python. They have been part of my process trying to learn Python and so, code can be messy or not optimized (sorry in advance). <span class="evidence"> However, every solution is not just plain code, I've written small explanations on every single line, so that it can serve as a Python learning experience for other people, just as it was for me. </span> Also, problems relying on tricky or advanced mathematical have a brief theorical explanation too. 
 
+**I strongly encourage you to try and solve the problems without looking at any solution**. Even if at first sight a problem feels overwhelming, give it a try and come back a few days later. You will be surprised at all the things you are capable of doing and you will learn even more. And just remember, if everything goes wrong, here you'll find some help. :)
 
 ---
 
