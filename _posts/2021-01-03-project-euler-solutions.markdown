@@ -16,11 +16,13 @@ author: davidboo
 externalLink: false
 ---
 
-[Leonhard Euler](https://www.euler-foundation.org/?page_id=45) (1707-1783) was, without any doubt, one of the greatest mathematicians of all time. He is absolutely the most prolific, writing over 900 publications of work in different science fields, such as number theory, graph theory, analysis, physics, astronomy... Matter of fact, [an active effort](https://en.wikipedia.org/wiki/List_of_things_named_after_Leonhard_Euler) was made to avoid naming everything after Euler and several theorems are attributed to the first person to have proved them after him. 
+[Leonhard Euler (1707-1783)](https://www.euler-foundation.org/?page_id=45) was, without any doubt, one of the greatest mathematicians of all time. He is absolutely the most prolific, writing over 900 publications of work in different science fields, such as number theory, graph theory, analysis, physics, astronomy... Matter of fact, [an active effort](https://en.wikipedia.org/wiki/List_of_things_named_after_Leonhard_Euler) was made to avoid naming everything after Euler and several theorems are attributed to the first person to have proved them after him. 
 
 Born in Basel, the Swiss mathematician enrolled at the University of Basel while being only 13. He also took classes from [Johann Bernoulli](https://en.wikipedia.org/wiki/Johann_Bernoulli), another brilliant mind who quickly realized that Euler had an inmense talent. He started publishing with only 16 ages and kept going on until his death. One of his most famous contributions is the [Euler's identity](https://plus.maths.org/content/maths-minute-eulers-identity) , chosen in a public poll as most beautiful theorem in mathematics.
 
 \\[ e^iπ + 1 = 0 \\]
+
+Knowing this, it's no surprise that Euler has become an idol and a role model to any aspiring mathematician (or engineer, or physicist, or...). The [Project Euler](https://projecteuler.net/) is one of many tributes that has been made dedicated to Euler, inicially created as a subsection of our colleages in [mathschallenge](mathschallenge.net) (a brilliant website to learn and enjoy mathematics). The Project Euler is a combination of mathematical problems that exists to encourage, challenge, and develop the skills and enjoyment of anyone with an interest in the fascinating world of mathematics
 
 ---
 
