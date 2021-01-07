@@ -18,7 +18,7 @@ externalLink: false
     
 [Leonhard Euler (1707-1783)](https://www.euler-foundation.org/?page_id=45) was, without any doubt, one of the greatest mathematicians of all time. He is absolutely the most prolific, writing over 900 publications of work in different science fields, such as number theory, graph theory, analysis, physics, astronomy... Matter of fact, [an active effort](https://en.wikipedia.org/wiki/List_of_things_named_after_Leonhard_Euler) was made to avoid naming everything after Euler and several theorems are attributed to the first person to have proved them after him. 
 
-Born in Basel, the Swiss mathematician enrolled at the University of Basel while being only 13. He also took classes from [Johann Bernoulli](https://en.wikipedia.org/wiki/Johann_Bernoulli), another brilliant mind who quickly realized that Euler had an inmense talent. He started publishing with only 16 ages and kept going on until his death. One of his most famous contributions is the [Euler's identity](https://plus.maths.org/content/maths-minute-eulers-identity) , chosen in a public poll as most beautiful theorem in mathematics.
+Born in Basel, the Swiss mathematician enrolled at the University of Basel while being only 13. He also took classes from [Johann Bernoulli](https://en.wikipedia.org/wiki/Johann_Bernoulli), another brilliant mind who quickly realized that Euler had an inmense talent. He started publishing with only 16 years and kept going on until his death. One of his most famous contributions is the [Euler's identity](https://plus.maths.org/content/maths-minute-eulers-identity) , chosen in a public poll as most beautiful theorem in mathematics.
 
 <div align="center">
 ![ ][/assets/images/euler_identity.png]
