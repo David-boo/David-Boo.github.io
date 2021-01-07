@@ -138,7 +138,6 @@ And just remember, if everything goes wrong, here you'll find some help. :)
 |100|[Arranged probability](https://projecteuler.net/problem=100)||
 
 
+---
 
 Thank you for your time and attention. Feel free to [reach out](https://david-boo.github.io/) if you have any questions or inquiries. I'd love to hear from you!
-
-
