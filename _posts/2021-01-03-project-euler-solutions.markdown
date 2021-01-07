@@ -24,13 +24,13 @@ Born in Basel, the Swiss mathematician enrolled at the University of Basel while
 
 Knowing this, it's no surprise that Euler has become an idol and a role model to any aspiring mathematician (or engineer, or physicist, or...). The [Project Euler](https://projecteuler.net/) is one of many tributes that has been made dedicated to Euler, inicially created as a subsection of our colleages in [mathschallenge](mathschallenge.net) (a brilliant website to learn and enjoy mathematics). <span class="evidence">The Project Euler is a combination of mathematical problems that exists to encourage, challenge, and develop the skills and enjoyment of anyone with an interest in the fascinating world of mathematics. </span>
 
-In this page you will find my personal solutions to the problems, using only Python. They have been part of my process trying to learn Python and so, code can be messy or not optimized (sorry in advance). <span class="evidence"> However, every solution is not just plain code, I've written small explanations on every single line, so that it can serve as a Python learning experience for other people, just as it was for me. </span> Also, problems relying on tricky or advanced mathematical have a brief theorical explanation too. 
+In this page you will find my personal solutions to the problems, using only Python. They have been part of my process trying to learn Python and so, code can be messy or not optimized (sorry in advance). <span class="evidence"> However, every solution is not just plain code, as **I've written small explanations on every line, so that it can serve as a Python learning experience for other people, just as it was for me**.</span> Also, problems relying on tricky or advanced mathematics have a brief theorical explanation too. 
 
-**I strongly encourage you to try and solve the problems without looking at any solution**. Even if at first sight a problem feels overwhelming, give it a try and come back a few days later. You will be surprised at all the things you are capable of doing and you will learn even more. And just remember, if everything goes wrong, here you'll find some help. :)
+**I strongly encourage you to try and solve the problems without looking at any solution**. Even if at first sight a problem feels overwhelming, give it a try and come back a few days later. You will be surprised at all the things you are capable of doing and you will learn even more. 
+
+And just remember, if everything goes wrong, here you'll find some help. :)
 
 ---
-<div style="text-align: center">
-
 
 |ID|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description / Title&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|Python Solution|
 |:-----|:-----:|-----:|
@@ -135,7 +135,7 @@ In this page you will find my personal solutions to the problems, using only Pyt
 |99|[Largest exponential](https://projecteuler.net/problem=99)||
 |100|[Arranged probability](https://projecteuler.net/problem=100)||
 
-</div>
+
 
 Thank you for your time and attention. Feel free to [reach out](https://david-boo.github.io/) if you have any questions or inquiries. I'd love to hear from you!
 
