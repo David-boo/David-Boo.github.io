@@ -15,7 +15,6 @@ category: project
 author: davidboo
 externalLink: false
 ---
-<div style="text-align: justify">
     
 [Leonhard Euler (1707-1783)](https://www.euler-foundation.org/?page_id=45) was, without any doubt, one of the greatest mathematicians of all time. He is absolutely the most prolific, writing over 900 publications of work in different science fields, such as number theory, graph theory, analysis, physics, astronomy... Matter of fact, [an active effort](https://en.wikipedia.org/wiki/List_of_things_named_after_Leonhard_Euler) was made to avoid naming everything after Euler and several theorems are attributed to the first person to have proved them after him. 
 
@@ -30,6 +29,7 @@ In this page you will find my personal solutions to the problems, using only Pyt
 **I strongly encourage you to try and solve the problems without looking at any solution**. Even if at first sight a problem feels overwhelming, give it a try and come back a few days later. You will be surprised at all the things you are capable of doing and you will learn even more. And just remember, if everything goes wrong, here you'll find some help. :)
 
 ---
+<div style="text-align: center">
 
 
 |ID|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description / Title&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|Python Solution|
@@ -135,7 +135,8 @@ In this page you will find my personal solutions to the problems, using only Pyt
 |99|[Largest exponential](https://projecteuler.net/problem=99)||
 |100|[Arranged probability](https://projecteuler.net/problem=100)||
 
+</div>
 
 Thank you for your time and attention. Feel free to [reach out](https://david-boo.github.io/) if you have any questions or inquiries. I'd love to hear from you!
 
-</div>
+
