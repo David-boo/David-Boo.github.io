@@ -1,7 +1,7 @@
 ---
 title: "Biopython Tutorial: from beginner to proficiency."
 layout: post
-date: 2016-02-24 22:44
+date: 2021-01-05 11:38
 image: /assets/images/Biopython_logo.png
 headerImage: true
 tag:
