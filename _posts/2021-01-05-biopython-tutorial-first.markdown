@@ -1,7 +1,6 @@
 ---
 title: "Biopython Tutorial: from beginner to proficiency."
 layout: post
-hidden: false
 date: 2021-01-05 11:38
 image: /assets/images/biopython_logo.svg
 headerImage: true
@@ -9,8 +8,9 @@ tag:
 - Python
 - Biopython
 - Bioinformatics
-star: true
+star: false
 category: blog
+hidden: false
 author: davidboo
 description: Biopython tutorial and guide and quick tips
 ---
