@@ -1,5 +1,5 @@
 ---
-title: "Biopython Tutorial: from beginner to proficiency."
+title: "Biopython Tutorial: from beginner to advanced."
 layout: post
 date: 2021-01-05 11:38
 image: /assets/images/biopython_logo.svg
@@ -12,13 +12,12 @@ star: false
 category: blog
 hidden: false
 author: davidboo
-description: Biopython tutorial and guide and quick tips
+description: Biopython tutorial and quick tips
 ---
 Biopython is a Python library for reading and writing many common biological data formats.
 
-Biopython is a Python library that allows us to perform bioinformatics computations on many common biological data formats. It is a powerful, useful library which provides a wide range of functions from reading large files with biological data to aligning sequences.
+Biopython is a Python library that allows us to perform bioinformatics computations on many common biological data formats. It is a powerful, useful library which provides a wide range of functions from reading large files with biological data.
 
-This is the first post in our Biopython series, starting from scratch
 
 **1. First Steps**
    * What is Biopython
@@ -63,7 +62,12 @@ This is the first post in our Biopython series, starting from scratch
 **8. PDB: 3D structure protein analysis**
    * Count atoms in a PDB structure
    
-Getting started
+
+---
+
+
+#### 1. First Steps
+
 The latest version available when I’m writing this article is biopython-1.77 released in May 2020.
 You can install Biopython using pip
 Biopython requires NumPy which will be installed automatically if you install Biopython with pip (see below for compiling Biopython yourself).
@@ -81,7 +85,12 @@ import Bio
 If you get an error such as ImportError: No module named Bio then you haven’t installed Biopython properly in your working environment. If no error messages appear, we are good to go.
 
 
-1. Creating a sequence
+---
+
+
+#### 2. Working with sequences
+
+**Creating a sequence**
 To create your own sequence, you can use the Biopython Seq object. Here is an example.
 
 ```python
@@ -93,28 +102,28 @@ The sequence is ATGACGTTGCATG
 The length of the sequence is 13
 ```
 
-2. Get the reverse complement of a sequence
+**Get the reverse complement of a sequence**
 You can easily get the reverse complement of a sequence using a single function call reverse_complement().
 ```python
 >>> print("The reverse complement if the sequence is", my_sequence.reverse_complement())
 The reverse complement if the sequence is CATGCAACGTCAT
 ```
 
-3. Count the number of occurrences of a nucleotide
+**Count the number of occurrences of a nucleotide**
 You can get the number of occurrence of a particular nucleotide using the count() function.
 ```python
 >>> print("The number of As in the sequence", my_sequence.count("A"))
 The number of As in the sequence 3
 ```
 
-4. Find the starting index of a subsequence
+**Find the starting index of a subsequence**
 You can find the starting index of a subsequence using the find() function.
 ```python
 >>> print("Found TTG in the sequence at index", my_sequence.find("TTG"))
 Found TTG in the sequence at index 6
 ```
 
-5. Reading a sequence file
+**Reading a sequence**
 Biopython’s SeqIO (Sequence Input/Output) interface can be used to read sequence files. The parse() function takes a file (with a file handle and format) and returns a SeqRecord iterator. Following is an example of how to read a FASTA file.
 ```python
 from Bio import SeqIO
@@ -123,7 +132,7 @@ for record in SeqIO.parse("example.fasta", "fasta"):
 record.id will return the identifier of the sequence. record.seq will return the sequence itself. record.description will return the sequence description.
 ```
 
-6. Writing sequences to a file
+**Writing sequences to a file**
 Biopython’s SeqIO (Sequence Input/Output) interface can be used to write sequences to files. Following is an example where a list of sequences are written to a FASTA file.
 ```python
 from Bio import SeqIO
@@ -145,7 +154,7 @@ with open("example.fasta", "w") as output_handle:
 # The SeqIO.write() function will return the number of sequences written.
 ```
 
-7. Convert a FASTQ file to FASTA file
+**Convert a FASTQ file to FASTA file**
 We need to convert DNA data file formats in certain applications. For example, we can do file format conversions from FASTQ to FASTA as follows.
 ```python
 from Bio import SeqIO
@@ -163,7 +172,7 @@ with open("path/to/genbank/file.gb", "rU") as input_handle, open("path/to/fasta/
 print("Converted %i records" % count)
 ```
 
-8. Separate sequences by ids from a list of ids
+**Separate sequences by ids from a list of ids**
 Assume that you have a list of sequence identifiers in a file named list.lst where you want to separate the corresponding sequences from a FASTA file. You can run the following and write those sequences to a file.
 ```python
 from Bio import SeqIO
@@ -176,11 +185,13 @@ with open(path+'list.fq', mode='a') as my_output:
             my_output.write(seq.format("fastq"))
 ```
 
-Final Thoughts
-Hope you got an idea of how to use Seq, SeqRecord and SeqIO Biopython functions and will be useful for your research work.
-Thank you for reading. I would love to hear your thoughts. Stay tuned for the next part of this article with more usages and Biopython functions.
-Cheers, and stay safe!
+#Final Thoughts
+#Hope you got an idea of how to use Seq, SeqRecord and SeqIO Biopython functions and will be useful for your research work.
+#Thank you for reading. I would love to hear your thoughts. Stay tuned for the next part of this article with more usages and Biopython functions.
+#Cheers, and stay safe!
 
+
+---
 
 
 1. Running Web BLAST
