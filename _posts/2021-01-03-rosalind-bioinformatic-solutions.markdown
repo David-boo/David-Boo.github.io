@@ -17,7 +17,9 @@ externalLink: false
 
 [Rosalind Franklin](https://www.rfi.ac.uk/about/rosalind-franklin/) was an outstanding, successful researcher in several fields of knowledge. Specifically, she made great contributions to the understanding of the fine molecular structures of DNA, RNA, viruses, coal and graphite. 
 
-![](https://github.com/David-boo/David-Boo.github.io/blob/gh-pages/assets/images/Rosalind_Franklin.jpg?raw=true)
+<p align="center">
+  <img width="460" height="300" src="https://github.com/David-boo/David-Boo.github.io/blob/gh-pages/assets/images/Rosalind_Franklin.jpg?raw=true">
+</p>
 
 
 Franklin is best known for her work on the [X-ray diffraction images of DNA](https://www.rosalindfranklinsociety.org/rosalind-franklin) which led to discovery of DNA double helix. Her X-ray diffraction images confirming the helical structure of DNA were shown to Watson without her approval or knowledge, and gave birth to Crick and Watson's 1953 hypothesis regarding the structure of DNA. Her work was published third, in the series of three DNA Nature articles, led by the paper of Watson and Crick which only hinted at her contribution to their hypothesis. 
