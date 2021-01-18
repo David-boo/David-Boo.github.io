@@ -20,7 +20,9 @@ externalLink: false
 
 Born in Basel, the Swiss mathematician enrolled at the University of Basel while being only 13. He also took classes from [Johann Bernoulli](https://en.wikipedia.org/wiki/Johann_Bernoulli), another brilliant mind who quickly realized that Euler had an inmense talent. He started publishing with only 16 years and kept going on until his death. One of his most famous contributions is the [Euler's identity](https://plus.maths.org/content/maths-minute-eulers-identity), chosen in a public poll as most beautiful theorem in mathematics.
 
-![](https://github.com/David-boo/David-Boo.github.io/blob/gh-pages/assets/images/euler_identity.png?raw=true)
+<p align="center">
+  <img src="https://github.com/David-boo/David-Boo.github.io/blob/gh-pages/assets/images/euler_identity.png?raw=true">
+</p>
 
 Knowing this, it's no surprise that Euler has become an idol and a role model to any aspiring mathematician (or engineer, or physicist, or...). The [Project Euler](https://projecteuler.net/) is one of many tributes that has been made dedicated to Euler, inicially created as a subsection of our colleages in [mathschallenge](mathschallenge.net) (a brilliant website to learn and enjoy mathematics). <span class="evidence">The Project Euler is a combination of mathematical problems that exists to encourage, challenge, and develop the skills and enjoyment of anyone with an interest in the fascinating world of mathematics.</span>
 
@@ -33,7 +35,8 @@ And just remember, if everything goes wrong, here you'll find some help. :)
 _This project is still a work in progress. Make sure to come back frecuently for the lastest updates!_
 
 ---
-
+<p align="center">
+    
 |ID|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description / Title&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|Python Solution|
 |:-----|:-----:|-----:|
 |1|[Multiples of 3 and 5](https://projecteuler.net/problem=1)|[Euler_001](https://github.com/David-boo/Euler/blob/main/Euler_001.py)|
@@ -137,7 +140,7 @@ _This project is still a work in progress. Make sure to come back frecuently for
 |99|[Largest exponential](https://projecteuler.net/problem=99)||
 |100|[Arranged probability](https://projecteuler.net/problem=100)||
 
-
+</p>
 ---
 
 Thank you for your time and attention. Feel free to [reach out](https://david-boo.github.io/) if you have any questions or inquiries. I'd love to hear from you!
