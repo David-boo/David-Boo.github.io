@@ -91,6 +91,7 @@ If you get an error such as ImportError: No module named Bio then you haven’t 
 #### 2. Working with sequences
 
 **Creating a sequence**
+
 To create your own sequence, you can use the Biopython Seq object. Here is an example.
 
 ```python
@@ -102,28 +103,8 @@ The sequence is ATGACGTTGCATG
 The length of the sequence is 13
 ```
 
-**Get the reverse complement of a sequence**
-You can easily get the reverse complement of a sequence using a single function call reverse_complement().
-```python
->>> print("The reverse complement if the sequence is", my_sequence.reverse_complement())
-The reverse complement if the sequence is CATGCAACGTCAT
-```
+**Parsing a sequence file**
 
-**Count the number of occurrences of a nucleotide**
-You can get the number of occurrence of a particular nucleotide using the count() function.
-```python
->>> print("The number of As in the sequence", my_sequence.count("A"))
-The number of As in the sequence 3
-```
-
-**Find the starting index of a subsequence**
-You can find the starting index of a subsequence using the find() function.
-```python
->>> print("Found TTG in the sequence at index", my_sequence.find("TTG"))
-Found TTG in the sequence at index 6
-```
-
-**Reading a sequence**
 Biopython’s SeqIO (Sequence Input/Output) interface can be used to read sequence files. The parse() function takes a file (with a file handle and format) and returns a SeqRecord iterator. Following is an example of how to read a FASTA file.
 ```python
 from Bio import SeqIO
@@ -132,7 +113,61 @@ for record in SeqIO.parse("example.fasta", "fasta"):
 record.id will return the identifier of the sequence. record.seq will return the sequence itself. record.description will return the sequence description.
 ```
 
+**Counting sequence length & number of occurrences of a nucleotide**
+
+a
+
+**Calculating GC-content**
+
+a
+
+**Calculating molecular weight**
+
+a
+
+**Get the reverse complement of a sequence, transcription & translation**
+
+You can easily get the reverse complement of a sequence using a single function call reverse_complement().
+```python
+>>> print("The reverse complement if the sequence is", my_sequence.reverse_complement())
+The reverse complement if the sequence is CATGCAACGTCAT
+```
+a
+
+**Slicing a sequence**
+
+a
+
+**Concatenating sequences**
+
+a
+
+**Find the starting index of a subsequence**
+
+You can find the starting index of a subsequence using the find() function.
+```python
+>>> print("Found TTG in the sequence at index", my_sequence.find("TTG"))
+Found TTG in the sequence at index 6
+```
+
+**Count the number of occurrences of a nucleotide**
+
+You can get the number of occurrence of a particular nucleotide using the count() function.
+```python
+>>> print("The number of As in the sequence", my_sequence.count("A"))
+The number of As in the sequence 3
+```
+
+**Finding codon in a sequence**
+
+a
+
+**Identifying open reading frames**
+
+a
+
 **Writing sequences to a file**
+
 Biopython’s SeqIO (Sequence Input/Output) interface can be used to write sequences to files. Following is an example where a list of sequences are written to a FASTA file.
 ```python
 from Bio import SeqIO
@@ -154,7 +189,8 @@ with open("example.fasta", "w") as output_handle:
 # The SeqIO.write() function will return the number of sequences written.
 ```
 
-**Convert a FASTQ file to FASTA file**
+**Converting a FASTQ file to FASTA file & other formats**
+
 We need to convert DNA data file formats in certain applications. For example, we can do file format conversions from FASTQ to FASTA as follows.
 ```python
 from Bio import SeqIO
@@ -173,6 +209,7 @@ print("Converted %i records" % count)
 ```
 
 **Separate sequences by ids from a list of ids**
+
 Assume that you have a list of sequence identifiers in a file named list.lst where you want to separate the corresponding sequences from a FASTA file. You can run the following and write those sequences to a file.
 ```python
 from Bio import SeqIO
@@ -189,7 +226,6 @@ with open(path+'list.fq', mode='a') as my_output:
 #Hope you got an idea of how to use Seq, SeqRecord and SeqIO Biopython functions and will be useful for your research work.
 #Thank you for reading. I would love to hear your thoughts. Stay tuned for the next part of this article with more usages and Biopython functions.
 #Cheers, and stay safe!
-
 
 ---
 
@@ -257,10 +293,13 @@ You can read more about how to use Biopython with BLAST from the Biopython Tutor
 
 
 #### 5. Multiple Sequence Alignment
+
 **Reading a MSA**
+
 aa
 
 **Creating an alignment using different algorithms: ClustalW, MUSCLE...**
+
 We can perform multiple sequence alignment (MSA) where we compare only more than two sequences. If you want to know more about MSA, you can read my article.
 
 Biopython provides command-line wrappers for MSA tools such as Clustal Omega, T-Coffee, ClustalW and DIALIGN.
@@ -276,6 +315,7 @@ print(clustalomega_cline)
 clustalomega_cline will be the command which you have to run. You can simply copy-paste it on your terminal.
 
 **Pairwise sequence alignment**
+
 We will be using the Bio.pairwise2 module for PSA.
 
 ```python
@@ -309,7 +349,9 @@ alignments = pairwise2.align.globalms(seq1, seq2, 2, -1, -0.5, -0.1)
 
 
 #### 6. Phylogenetics
+
 **Constructing a phylogenetic tree**
+
 Phylogenetic trees represent evolutionary relationships between organisms or genes. We can use the Bio.Phylo module for this.
 As an example, we will consider the sequences in a file named as msa.phy that can be found in the official biopython test material for tree construction. Make sure to download the msa.phy file.
 
@@ -332,19 +374,23 @@ Phylo.draw_ascii(tree)
 ```
 
 **Modifying an existing tree**
+
 aaa
    
 ---
 
 
 #### 7. Sequence motif analysis
+
 aaa
 
 ---
 
 
 #### 8. PDB: 3D structure protein analysis
+
 **Count atoms in a PDB structure**
+
 aaa
 
 ---
