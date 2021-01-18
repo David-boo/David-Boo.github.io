@@ -195,6 +195,9 @@ with open(path+'list.fq', mode='a') as my_output:
 
 #### 3. NCBI Entrez databases
 
+---
+
+
 #### 4. BLAST
 
 1. Running Web BLAST
@@ -250,6 +253,9 @@ for blast_record in blast_records:
 ```
 You can read more about how to use Biopython with BLAST from the Biopython Tutorial and Cookbook.
 
+---
+
+
 #### 5. Multiple Sequence Alignment
 **Reading a MSA**
 aa
@@ -299,6 +305,9 @@ You can do a global alignment and change the scoring scheme (assign custom value
 alignments = pairwise2.align.globalms(seq1, seq2, 2, -1, -0.5, -0.1)
 ```
 
+---
+
+
 #### 6. Phylogenetics
 **Constructing a phylogenetic tree**
 Phylogenetic trees represent evolutionary relationships between organisms or genes. We can use the Bio.Phylo module for this.
@@ -325,13 +334,18 @@ Phylo.draw_ascii(tree)
 **Modifying an existing tree**
 aaa
    
+---
+
+
 #### 7. Sequence motif analysis
 aaa
+
+---
+
 
 #### 8. PDB: 3D structure protein analysis
 **Count atoms in a PDB structure**
 aaa
 
-
-
+---
 
