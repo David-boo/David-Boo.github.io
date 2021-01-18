@@ -20,9 +20,9 @@ externalLink: false
 
 Born in Basel, the Swiss mathematician enrolled at the University of Basel while being only 13. He also took classes from [Johann Bernoulli](https://en.wikipedia.org/wiki/Johann_Bernoulli), another brilliant mind who quickly realized that Euler had an inmense talent. He started publishing with only 16 years and kept going on until his death. One of his most famous contributions is the [Euler's identity](https://plus.maths.org/content/maths-minute-eulers-identity), chosen in a public poll as most beautiful theorem in mathematics.
 
-![](../assets/images/euler_identity.PNG?raw=true)
+![](../assets/images/euler_identity.png?raw=true)
 
-<img src="../assets/images/euler_identity.PNG" width="800" />
+<img src="../assets/images/euler_identity.png" width="800"/>
 
 
 
