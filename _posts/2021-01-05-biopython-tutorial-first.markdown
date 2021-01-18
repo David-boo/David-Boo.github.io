@@ -22,8 +22,7 @@ Biopython is a Python library that allows us to perform bioinformatics computati
 #### 1. First Steps
    * What is Biopython
    * Installing and upgrading
-   
-#### **2. Working with Sequences**
+#### 2. Working with Sequences
    * Creating a sequence
    * Parsing a sequence file
    * Counting sequence length & number of occurrences of a nucleotide
@@ -38,28 +37,22 @@ Biopython is a Python library that allows us to perform bioinformatics computati
    * Writing sequences to a file
    * Converting a FASTQ file to FASTA file & other formats
    * Separate sequences by ids from a list of ids
-   
-#### **3. NCBI Entrez databases**
+#### 3. NCBI Entrez databases
    * General Guidelines
    * Accessing Pubmed, Medline, Genbank & others
-   
-#### **4. BLAST**
+#### 4. BLAST
    * Running a web BLAST
    * Parsing a BLAST output
    * Other sequence search tools: SearchIO (QueryResult, Hit...)
-   
-#### **5. Multiple Sequence Alignment**
+#### 5. Multiple Sequence Alignment
    * Reading a MSA
    * Creating an alignment using different algorithms: ClustalW, MUSCLE...
    * Pairwise sequence alignment
-   
-#### **6. Phylogenetics**
+#### 6. Phylogenetics
    * Constructing a phylogenetic tree
    * Modifying an existing tree
-   
-#### **7. Sequence motif analysis**
-
-#### **8. PDB: 3D structure protein analysis**
+#### 7. Sequence motif analysis
+#### 8. PDB: 3D structure protein analysis
    * Count atoms in a PDB structure
    
 
