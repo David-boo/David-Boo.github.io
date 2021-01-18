@@ -193,6 +193,9 @@ with open(path+'list.fq', mode='a') as my_output:
 
 ---
 
+#### 3. NCBI Entrez databases
+
+#### 4. BLAST
 
 1. Running Web BLAST
 Using Biopython, you can align sequences with Web BLAST which is the online version of BLAST. For this, we will be using the qblast() function in the Bio.Blast.NCBIWWW module.
@@ -247,8 +250,26 @@ for blast_record in blast_records:
 ```
 You can read more about how to use Biopython with BLAST from the Biopython Tutorial and Cookbook.
 
-3. Pairwise sequence alignment
+#### 5. Multiple Sequence Alignment
+**Reading a MSA**
+aa
 
+**Creating an alignment using different algorithms: ClustalW, MUSCLE...**
+We can perform multiple sequence alignment (MSA) where we compare only more than two sequences. If you want to know more about MSA, you can read my article.
+
+Biopython provides command-line wrappers for MSA tools such as Clustal Omega, T-Coffee, ClustalW and DIALIGN.
+
+For example, if you want to use Clustal Omega, then first, you have to download its precompiled binaries. Then you can get an executable command as follows.
+```python
+from Bio.Align.Applications import ClustalOmegaCommandline
+in_file = "sample.fsa"
+out_file = "aligned.fasta"
+clustalomega_cline = ClustalOmegaCommandline(infile=in_file, outfile=out_file, verbose=True, auto=True)
+print(clustalomega_cline)
+```
+clustalomega_cline will be the command which you have to run. You can simply copy-paste it on your terminal.
+
+**Pairwise sequence alignment**
 We will be using the Bio.pairwise2 module for PSA.
 
 ```python
@@ -278,22 +299,8 @@ You can do a global alignment and change the scoring scheme (assign custom value
 alignments = pairwise2.align.globalms(seq1, seq2, 2, -1, -0.5, -0.1)
 ```
 
-4. Multiple sequence alignment
-We can perform multiple sequence alignment (MSA) where we compare only more than two sequences. If you want to know more about MSA, you can read my article.
-
-Biopython provides command-line wrappers for MSA tools such as Clustal Omega, T-Coffee, ClustalW and DIALIGN.
-
-For example, if you want to use Clustal Omega, then first, you have to download its precompiled binaries. Then you can get an executable command as follows.
-```python
-from Bio.Align.Applications import ClustalOmegaCommandline
-in_file = "sample.fsa"
-out_file = "aligned.fasta"
-clustalomega_cline = ClustalOmegaCommandline(infile=in_file, outfile=out_file, verbose=True, auto=True)
-print(clustalomega_cline)
-```
-clustalomega_cline will be the command which you have to run. You can simply copy-paste it on your terminal.
-
-5. Construct a phylogenetic tree
+#### 6. Phylogenetics
+**Constructing a phylogenetic tree**
 Phylogenetic trees represent evolutionary relationships between organisms or genes. We can use the Bio.Phylo module for this.
 As an example, we will consider the sequences in a file named as msa.phy that can be found in the official biopython test material for tree construction. Make sure to download the msa.phy file.
 
@@ -314,4 +321,17 @@ tree = constructor.upgma(dm)
 # We can draw the phylogenetic tree on the terminal.
 Phylo.draw_ascii(tree)
 ```
+
+**Modifying an existing tree**
+aaa
+   
+#### 7. Sequence motif analysis
+aaa
+
+#### 8. PDB: 3D structure protein analysis
+**Count atoms in a PDB structure**
+aaa
+
+
+
 
