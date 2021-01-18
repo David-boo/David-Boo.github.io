@@ -19,7 +19,7 @@ Biopython is a Python library for reading and writing many common biological dat
 Biopython is a Python library that allows us to perform bioinformatics computations on many common biological data formats. It is a powerful, useful library which provides a wide range of functions from reading large files with biological data.
 
 
-#### **1. First Steps**
+#### 1. First Steps
    * What is Biopython
    * Installing and upgrading
    
