@@ -18,7 +18,7 @@ externalLink: false
 [Rosalind Franklin](https://www.rfi.ac.uk/about/rosalind-franklin/) was an outstanding, successful researcher in several fields of knowledge. Specifically, she made great contributions to the understanding of the fine molecular structures of DNA, RNA, viruses, coal and graphite. 
 
 <p align="center">
-  <img width="460" height="300" src="https://github.com/David-boo/David-Boo.github.io/blob/gh-pages/assets/images/Rosalind_Franklin.jpg?raw=true">
+  <img src="https://github.com/David-boo/David-Boo.github.io/blob/gh-pages/assets/images/Rosalind_Franklin.jpg?raw=true">
 </p>
 
 
