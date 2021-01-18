@@ -20,9 +20,7 @@ externalLink: false
 
 Born in Basel, the Swiss mathematician enrolled at the University of Basel while being only 13. He also took classes from [Johann Bernoulli](https://en.wikipedia.org/wiki/Johann_Bernoulli), another brilliant mind who quickly realized that Euler had an inmense talent. He started publishing with only 16 years and kept going on until his death. One of his most famous contributions is the [Euler's identity](https://plus.maths.org/content/maths-minute-eulers-identity), chosen in a public poll as most beautiful theorem in mathematics.
 
-<div align="center">
-![**ARREGLA LA FOTO DAVID**][assets/images/euler_identity.png]
-</div>
+![Euler](../assets/images/euler_identity.png)
 
 Knowing this, it's no surprise that Euler has become an idol and a role model to any aspiring mathematician (or engineer, or physicist, or...). The [Project Euler](https://projecteuler.net/) is one of many tributes that has been made dedicated to Euler, inicially created as a subsection of our colleages in [mathschallenge](mathschallenge.net) (a brilliant website to learn and enjoy mathematics). <span class="evidence">The Project Euler is a combination of mathematical problems that exists to encourage, challenge, and develop the skills and enjoyment of anyone with an interest in the fascinating world of mathematics.</span>
 
@@ -31,6 +29,8 @@ In this page you will find my personal solutions to the problems, using only Pyt
 **I strongly encourage you to try and solve the problems without looking at any solution**. Even if at first sight a problem feels overwhelming, give it a try and come back a few days later. You will be surprised at all the things you are capable of doing and you will learn even more. 
 
 And just remember, if everything goes wrong, here you'll find some help. :)
+
+_This project is still a work in progress. Make sure to come back frecuently for the lastest updates!_
 
 ---
 
@@ -53,8 +53,8 @@ And just remember, if everything goes wrong, here you'll find some help. :)
 |15|[Lattice paths](https://projecteuler.net/problem=15)|[Euler_015](https://github.com/David-boo/Euler/blob/main/Euler_015.py)|
 |16|[Power digit sum](https://projecteuler.net/problem=16)|[Euler_016](https://github.com/David-boo/Euler/blob/main/Euler_016.py)|
 |17|[Number letter counts](https://projecteuler.net/problem=17)|[Euler_017](https://github.com/David-boo/Euler/blob/main/Euler_017.py)|
-|18|[Maximum path sum I](https://projecteuler.net/problem=18)|[Euler_018](https://github.com/David-boo/Euler/blob/main/Euler_018.py)|
-|19|[Counting Sundays](https://projecteuler.net/problem=19)|[Euler_019](https://github.com/David-boo/Euler/blob/main/Euler_019.py)|
+|18|[Maximum path sum I](https://projecteuler.net/problem=18)||
+|19|[Counting Sundays](https://projecteuler.net/problem=19)||
 |20|[Factorial digit sum](https://projecteuler.net/problem=20)||
 |21|[Amicable numbers](https://projecteuler.net/problem=21)||
 |22|[Names scores](https://projecteuler.net/problem=22)||
