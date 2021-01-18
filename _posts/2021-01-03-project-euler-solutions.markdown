@@ -22,6 +22,10 @@ Born in Basel, the Swiss mathematician enrolled at the University of Basel while
 
 ![Euler](../assets/images/euler_identity.PNG)
 
+<img src="../assets/images/euler_identity.PNG" width="800" />
+
+
+
 Knowing this, it's no surprise that Euler has become an idol and a role model to any aspiring mathematician (or engineer, or physicist, or...). The [Project Euler](https://projecteuler.net/) is one of many tributes that has been made dedicated to Euler, inicially created as a subsection of our colleages in [mathschallenge](mathschallenge.net) (a brilliant website to learn and enjoy mathematics). <span class="evidence">The Project Euler is a combination of mathematical problems that exists to encourage, challenge, and develop the skills and enjoyment of anyone with an interest in the fascinating world of mathematics.</span>
 
 In this page you will find my personal solutions to the problems, using only Python. They have been part of my process trying to learn Python and so, code can be messy or not optimized (sorry in advance). <span class="evidence"> However, every solution is not just plain code, as **I've written small explanations on every line, so that it can serve as a Python learning experience for other people, just as it was for me**.</span> Also, problems relying on tricky or advanced mathematics have a brief theorical explanation too. 
