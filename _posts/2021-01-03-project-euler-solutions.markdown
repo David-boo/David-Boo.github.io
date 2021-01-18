@@ -35,7 +35,6 @@ And just remember, if everything goes wrong, here you'll find some help. :)
 _This project is still a work in progress. Make sure to come back frecuently for the lastest updates!_
 
 ---
-<p align="center">
     
 |ID|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description / Title&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|Python Solution|
 |:-----|:-----:|-----:|
@@ -140,7 +139,6 @@ _This project is still a work in progress. Make sure to come back frecuently for
 |99|[Largest exponential](https://projecteuler.net/problem=99)||
 |100|[Arranged probability](https://projecteuler.net/problem=100)||
 
-</p>
 ---
 
 Thank you for your time and attention. Feel free to [reach out](https://david-boo.github.io/) if you have any questions or inquiries. I'd love to hear from you!
