@@ -90,7 +90,7 @@ If you get an error such as ImportError: No module named Bio then you haven’t 
 
 #### 2. Working with sequences
 
-# Creating a sequence
+##### Creating a sequence
 
 To create your own sequence, you can use the Biopython Seq object. Here is an example.
 
@@ -103,7 +103,7 @@ The sequence is ATGACGTTGCATG
 The length of the sequence is 13
 ```
 
-# Parsing a sequence file
+##### Parsing a sequence file
 
 Biopython’s SeqIO (Sequence Input/Output) interface can be used to read sequence files. The parse() function takes a file (with a file handle and format) and returns a SeqRecord iterator. Following is an example of how to read a FASTA file.
 ```python
@@ -113,19 +113,19 @@ for record in SeqIO.parse("example.fasta", "fasta"):
 record.id will return the identifier of the sequence. record.seq will return the sequence itself. record.description will return the sequence description.
 ```
 
-# Counting sequence length & number of occurrences of a nucleotide
+##### Counting sequence length & number of occurrences of a nucleotide
 
 a
 
-# Calculating GC-content
+##### Calculating GC-content
 
 a
 
-# Calculating molecular weight
+##### Calculating molecular weight
 
 a
 
-# Get the reverse complement of a sequence, transcription & translation
+##### Get the reverse complement of a sequence, transcription & translation
 
 You can easily get the reverse complement of a sequence using a single function call reverse_complement().
 ```python
@@ -134,11 +134,11 @@ The reverse complement if the sequence is CATGCAACGTCAT
 ```
 a
 
-# Slicing a sequence
+##### Slicing a sequence
 
 a
 
-# Concatenating sequences
+##### Concatenating sequences
 
 a
 
