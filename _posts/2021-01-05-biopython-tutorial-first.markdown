@@ -236,7 +236,7 @@ with open(path+'list.fq', mode='a') as my_output:
 
 #### 4. BLAST
 
-1. Running Web BLAST
+**Running Web BLAST**
 Using Biopython, you can align sequences with Web BLAST which is the online version of BLAST. For this, we will be using the qblast() function in the Bio.Blast.NCBIWWW module.
 You can check the documentation as follows.
 ```python
@@ -255,7 +255,8 @@ Now we can save the result to a file.
 result_handle.close()
 ```
 
-2. Reading a BLAST result
+**Parsing a BLAST output**
+
 We can load our saved BLAST result as follows.
 
 ```python
@@ -288,6 +289,10 @@ for blast_record in blast_records:
     print()
 ```
 You can read more about how to use Biopython with BLAST from the Biopython Tutorial and Cookbook.
+
+**Other sequence search tools: SearchIO (QueryResult, Hit...)**
+
+a
 
 ---
 
