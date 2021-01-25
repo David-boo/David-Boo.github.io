@@ -81,7 +81,7 @@ You can test if Biopython is properly installed by executing:
 import Bio
 ```
 
-If no error messages appear, everything is working and you're all set.
+If no error messages appear, then everything is working and you're all set.
 
 ---
 
@@ -89,47 +89,90 @@ If no error messages appear, everything is working and you're all set.
 
 **Creating a sequence**
 
-To create your own sequence, you can use the Biopython Seq object. Here is an example.
+The easiest way to create a sequence is using the Biopython ```Seq``` object. The bio.seq module is really useful and we will make use of it constantly. You can check the [Wiki page](https://biopython.org/wiki/Seq) for more information and advice. Here is a small example.
 
 ```python
->>> from Bio.Seq import Seq
->>> my_sequence = Seq("ATGACGTTGCATG")
->>> print("The sequence is", my_sequence)
-The sequence is ATGACGTTGCATG
->>> print("The length of the sequence is", len(my_sequence))
-The length of the sequence is 13
+from Bio.Seq import Seq
+seq_example = Seq("AGTACACTGGT")
+print("Sequence is", seq_example)
+>>> Sequence is AGTACACTGGT
 ```
 
 **Parsing a sequence file**
 
-Biopython’s SeqIO (Sequence Input/Output) interface can be used to read sequence files. The parse() function takes a file (with a file handle and format) and returns a SeqRecord iterator. Following is an example of how to read a FASTA file.
+[Biopython’s SeqIO](https://biopython.org/wiki/SeqIO) (Sequence Input/Output) can be used to read sequence files. The main function is ```Bio.SeqIO.parse()```, which requires a filename and format and returns a SeqRecord iterator. This is an example of parsing a FASTA file.
 ```python
 from Bio import SeqIO
-for record in SeqIO.parse("example.fasta", "fasta"):
-    print(record.id)
-record.id will return the identifier of the sequence. record.seq will return the sequence itself. record.description will return the sequence description.
+for record in SeqIO.parse("example_sequence.fasta", "fasta"):
+    print(record.seq)
 ```
+```record.id``` will return the identifier of the sequence. ```record.seq``` will return the sequence itself. ```record.description``` will return the sequence description.
 
 **Counting sequence length & number of occurrences of a nucleotide**
 
-a
+Counting sequence length is really easy using ```len()```. Using our previous example:
+
+```python
+from Bio.Seq import Seq
+seq_example = Seq("AGTACACTGGT")
+print("Sequence is", seq_example)
+>>> Sequence is AGTACACTGGT
+print("The length of the sequence is", len(seq_example))
+>>> The length of the sequence is 11
+```
+You can count numer of occurrences of a certain nucleotide as follows: (Make sure to create/load sequence as we've done earlier)
+
+```python
+print(seq_example.count("C"))
+>>> 2
+```
 
 **Calculating GC-content**
 
-a
+[GC content](https://en.wikipedia.org/wiki/GC-content) is a measure of the percentage of guanine (G) or cytosine (C) related to the total nitrogenous bases (A+T on DNA or A+U on RNA). GC content is important because it indicates a higher melting temperature and also key factor in bacteria taxonomy. Biopython has a ```Bio.SeqUtils``` [package](https://biopython.org/docs/1.75/api/Bio.SeqUtils.html) that simplifies this task. Feel free to check wiki for more information.
+
+```python
+from Bio.SeqUtils import GC
+from Bio.Seq import Seq
+seq_example = Seq("AGTACACTGGT")
+print(GC(seq_example))
+>>> 45.45
+```
 
 **Calculating molecular weight**
 
-a
+Again, molecular weight can be easily calculated using ```Bio.SeqUtils``` as follows:
+
+```python
+from Bio.SeqUtils import molecular_weight
+from Bio.Seq import Seq
+seq_example = Seq("AGTACACTGGT")
+print(molecular_weight(seq_example))
+>>> 3436.19
+```
 
 **Get the reverse complement of a sequence, transcription & translation**
 
-You can easily get the reverse complement of a sequence using a single function call reverse_complement().
+Using Biopython these three processes ar really straightforward. To get the reverse complement use the single function ```reverse_complement()```.
+
 ```python
->>> print("The reverse complement if the sequence is", my_sequence.reverse_complement())
-The reverse complement if the sequence is CATGCAACGTCAT
+print("Reverse complement:", seq_example.reverse_complement())
+>>> The reverse complement if the sequence is ACCAGTGTACT
 ```
-a
+
+Transcription is also a single function, ```transcribe()```
+
+```python
+print("Transcription:", seq_example.transcribe())
+>>> Transcription: AGUACACUGGU
+```
+
+Translation is again another function, ```translate()```. Please note that if your sequence is not suitable for correct translation you will recieve a warning from Biopython (our example gets this warning). This happens if your sequence is not a multiple of three, which makes partial codons on translation (we'll come back to this later). You can have more information about this biological process [here](https://www.genome.gov/genetics-glossary/Translation)
+
+```python
+print("Translation:", seq_example.translate())
+>>> Translation: STL
+```
 
 **Slicing a sequence**
 
@@ -145,14 +188,6 @@ You can find the starting index of a subsequence using the find() function.
 ```python
 >>> print("Found TTG in the sequence at index", my_sequence.find("TTG"))
 Found TTG in the sequence at index 6
-```
-
-**Count the number of occurrences of a nucleotide**
-
-You can get the number of occurrence of a particular nucleotide using the count() function.
-```python
->>> print("The number of As in the sequence", my_sequence.count("A"))
-The number of As in the sequence 3
 ```
 
 **Finding codon in a sequence**
