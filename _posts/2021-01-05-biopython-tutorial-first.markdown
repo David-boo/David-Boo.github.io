@@ -62,31 +62,28 @@ Biopython is a Python library that allows us to perform bioinformatics computati
 #### 8. PDB: 3D structure protein analysis
    * Count atoms in a PDB structure
    
-
 ---
-
 
 #### 1. First Steps
 
-The latest version available when I’m writing this article is biopython-1.77 released in May 2020.
-You can install Biopython using pip
-Biopython requires NumPy which will be installed automatically if you install Biopython with pip (see below for compiling Biopython yourself).
+Our first step is installing Biopython. The easiest way is to Biopython is using ```pip``` package such as follows. (Please note that Biopython also requires NumPy package, which will be installed automatically if you install Biopython with ```pip```).
+
+If you already have Biopython installed you can upgrade it using ```pip``` aswell. 
 
 ```python
 pip install biopython
 pip install --upgrade biopython
 ```
 
-You can test whether Biopython is properly installed by executing the following line in the python interpreter.
+You can test if Biopython is properly installed by executing:
+
 ```python
 import Bio
 ```
 
-If you get an error such as ImportError: No module named Bio then you haven’t installed Biopython properly in your working environment. If no error messages appear, we are good to go.
-
+If no error messages appear, everything is working and you're all set.
 
 ---
-
 
 #### 2. Working with sequences
 
