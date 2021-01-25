@@ -33,7 +33,6 @@ Biopython is a Python library that allows us to perform bioinformatics computati
    * Slicing a sequence
    * Concatenating sequences
    * Finding the starting index of a subsequence
-   * Finding codon in a sequence
    * Identifying open reading frames
    * Writing sequences to a file
    * Converting a FASTQ file to FASTA file & other formats
@@ -176,23 +175,56 @@ print("Translation:", seq_example.translate())
 
 **Slicing a sequence**
 
-a
+With Biopython you can slice effectively sequences and extract any part of it.
+
+```python
+from Bio.Seq import Seq
+seq_example = Seq("AGTACACTGGT")
+print(seq_example[4:9])
+>>> CACTG
+```
+
+It follows the usual indexing conventions for Python strings, with the first element of the sequence numbered 0. When you do a slice the first item is included (i.e. 4) and the last is excluded (9 in this case). We can get the third codon positions of this DNA sequence:
+
+```python
+from Bio.Seq import Seq
+seq_example = Seq("AGTACACTGGT")
+print(seq_example[0::3])
+>>> AACG
+```
 
 **Concatenating sequences**
 
-a
+You can add any two ```Seq``` objects together
+
+```python
+from Bio.Seq import Seq
+seq_example = Seq("AGTACACTGGT")
+seq_add = Seq("TTTT")
+print(seq_example + seq_add)
+>>> AGTACACTGGTTTTT
+```
+
+Biopython ```Seq``` also has a ```.join``` method which can be really useful
+
+```python
+from Bio.Seq import Seq
+fragments = [Seq("AGTA"), Seq("CACT"), Seq("GGT")]
+filler = Seq("G"*10)
+print(filler.join(fragments))
+>>> AGTAGGGGGGGGGGCACTGGGGGGGGGGGGT
+```
 
 **Find the starting index of a subsequence**
 
-You can find the starting index of a subsequence using the find() function.
+Easiest way to find starting index of a subsequence is using ```find()```
+
 ```python
->>> print("Found TTG in the sequence at index", my_sequence.find("TTG"))
-Found TTG in the sequence at index 6
+from Bio.Seq import Seq
+seq_example = Seq("AGTACACTGGT")
+print("CAC index:", seq_example.find("CAC"))
+>>> CAC index: 4
 ```
-
-**Finding codon in a sequence**
-
-a
 
 **Identifying open reading frames**
 
