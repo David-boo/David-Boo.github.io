@@ -299,6 +299,37 @@ with open(path+'list.fq', mode='a') as my_output:
 
 #### 3. NCBI Entrez databases
 
+**General Guidelines**
+
+[Entrez](https://www.ncbi.nlm.nih.gov/Web/Search/entrezfs.html) is a data retrieval system that provides users access to NCBI’s databases such as PubMed, GenBank, GEO, and many others. Using Biopython's module ```Bio.Entrez``` allows you to access Entrez and search & download records from within a Python script. You must provide an email to access Entrez - NCBI can block anonymous requests. Also,  ```Bio.Entrez``` might not be the best option to download huge amounts of data as it can clog the servers. 
+
+```python
+from Bio import Entrez
+Entrez.email = "davidboo@example.com"
+```
+
+**Accessing PubMed, Medline, Genbank & others**
+
+To search any of these databases, we use ```Bio.Entrez.esearch()``` module, which requires some parameters:
+
+```python
+handle = Entrez.esearch(db="value", term="keywords", retmax=100)
+```
+
+Where db are databases such as Pubmed, nucleotide, protein, snp, omim, unigene... keywords are what you are interested in looking at (organisms, Human, Biopython, urea...) and retmax are the number of identifies returned. 
+
+Let's do an example accessing PubMed. We will be searching in PubMed for 20 publications that include breast cancer in their title.
+
+```python
+from Bio import Entrez
+Entrez.email = "davidboo@example.com"
+handle = Entrez.esearch(db="pubmed", term="breast[title] AND cancer[title]", retmax=20)
+record = Entrez.read(handle)
+identifiers = records['IdList']
+```
+handle = Entrez.esearch(db="value", term="keywords", retmax=100)
+
+
 ---
 
 
