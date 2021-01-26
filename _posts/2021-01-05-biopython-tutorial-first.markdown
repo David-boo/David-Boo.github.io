@@ -323,12 +323,13 @@ Let's do an example accessing PubMed. We will be searching in PubMed for 20 publ
 ```python
 from Bio import Entrez
 Entrez.email = "davidboo@example.com"
-handle = Entrez.esearch(db="pubmed", term="breast[title] AND cancer[title]", retmax=20)
+handle = Entrez.esearch(db="pubmed", term="breast[title] AND cancer[title]", retmax=20, rettype="fasta", retmode="text")
 record = Entrez.read(handle)
-identifiers = records['IdList']
+print(record["IdList"])
 ```
 handle = Entrez.esearch(db="value", term="keywords", retmax=100)
 
+ME QUEDO AQUÍ DAVID
 
 ---
 
@@ -336,35 +337,43 @@ handle = Entrez.esearch(db="value", term="keywords", retmax=100)
 #### 4. BLAST
 
 **Running Web BLAST**
-Using Biopython, you can align sequences with Web BLAST which is the online version of BLAST. For this, we will be using the qblast() function in the Bio.Blast.NCBIWWW module.
-You can check the documentation as follows.
+
+BLAST is an algorithm and program for comparing primary biological sequence information (i.e, protein or aminoacid sequences). Using Biopython, you can align sequences with Web BLAST which is the online version of BLAST, using the ```Bio.Blast.NCBIWWW``` module. Here is an example of a BLASTN (Nucleotide BLAST), searching a known sequence on the nucleotide database (nt).
+
+```python
+from Bio import SeqIO
+record = SeqIO.read("seq_example.fasta", format="fasta")
+results_handle = NCBIWWW.qblast("blastn", "nt", record.format("fasta"))
+
+# You could now save the results in XML format output as default
+
+with open("blastn_result.xml", "w") as out_handle:
+    out_handle.write(result_handle.read())
+result_handle.close()
+```
+
+For more information and other parameters make sure to check official information doing:
+
 ```python
 from Bio.Blast import NCBIWWW
 help(NCBIWWW.qblast)
 ```
 
-If you have a FASTA file, you can search it against the nucleotide database (nt) using Nucleotide BLAST (BLASTN) as follows.
-```python
-from Bio import SeqIO
-record = SeqIO.read("sample.fasta", format="fasta")
-result_handle = NCBIWWW.qblast("blastn", "nt", record.format("fasta"))
-Now we can save the result to a file.
-# with open("my_blast_result.xml", "w") as out_handle:
-    out_handle.write(result_handle.read())
-result_handle.close()
-```
+Please note that running a Web BLAST can be slower than a local BLAST, and you can create custom, personal databases to search for sequences against if running locally. You can find more information on the [official wiki](http://biopython.org/DIST/docs/tutorial/Tutorial.html#sec121) (and maybe some tutorial here soon ;) )
 
 **Parsing a BLAST output**
 
-We can load our saved BLAST result as follows.
+Our saved BLAST output can be parsed as follows
 
 ```python
-result_handle = open("my_blast_result.xml")
+result_handle = open("blastn_result.xml")
 ```
-Let’s check the returned hits. Since we have obtained the BLAST output in XML format, we can parse the result using NCBIXML. Here we have used one query sequence and hence we get only one record.
+
+As said earlier, our BLAST output is in XML format, so we can parse the result using ```NCBIXML```. Please note that we have used one query sequence and so, we are only getting one record. This code can be quickly adapted to multiple query sequences changing ```blast_record=NCBIXML.read(result_handle)``` to ```blast_records=NCBIXML.parse(result_handle)```
+
 ```python
 from Bio.Blast import NCBIXML
-blast_record = NCBIXML.read(result_handle)
+blast_records = NCBIXML.read(result_handle)
 ```
 
 You can get the alignments from blast_record.alignments.
