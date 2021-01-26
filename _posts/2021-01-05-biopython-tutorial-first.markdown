@@ -33,7 +33,6 @@ Biopython is a Python library that allows us to perform bioinformatics computati
    * Slicing a sequence
    * Concatenating sequences
    * Finding the starting index of a subsequence
-   * Identifying open reading frames
    * Writing sequences to a file
    * Converting a FASTQ file to FASTA file & other formats
    * Separate sequences by ids from a list of ids
@@ -226,13 +225,18 @@ print("CAC index:", seq_example.find("CAC"))
 >>> CAC index: 4
 ```
 
-**Identifying open reading frames**
-
-a
-
 **Writing sequences to a file**
 
-Biopython’s SeqIO (Sequence Input/Output) interface can be used to write sequences to files. Following is an example where a list of sequences are written to a FASTA file.
+SeqIO (Sequence Input/Output) package can be used to write sequences to files. Our main function is ```SeqIO.write()``` used as:
+
+```python
+SeqIO.write(records, file, format)
+```
+
+Where records will be a list of sequence records you wish to save, file is a file open for writing and format should be ‘fasta’.
+
+ME QUEDO AQUÍ DAVID
+
 ```python
 from Bio import SeqIO
 from Bio.SeqRecord import SeqRecord
