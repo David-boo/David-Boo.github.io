@@ -18,15 +18,9 @@ externalLink: false
   
 [Leonhard Euler (1707-1783)](https://www.euler-foundation.org/?page_id=45) was, without any doubt, one of the greatest mathematicians of all time. He is absolutely the most prolific, writing over 900 publications of work in different science fields, such as number theory, graph theory, analysis, physics, astronomy... Matter of fact, [an active effort](https://en.wikipedia.org/wiki/List_of_things_named_after_Leonhard_Euler) was made to avoid naming everything after Euler and several theorems are attributed to the first person to have proved them after him. 
 
-Born in Basel, the Swiss mathematician enrolled at the University of Basel while being only 13. He also took classes from [Johann Bernoulli](https://en.wikipedia.org/wiki/Johann_Bernoulli), another brilliant mind who quickly realized that Euler had an inmense talent. He started publishing with only 16 years and kept going on until his death. One of his most famous contributions is the [Euler's identity](https://plus.maths.org/content/maths-minute-eulers-identity), chosen in a public poll as most beautiful theorem in mathematics.
-
-<p align="center">
-  <img src="https://github.com/David-boo/David-Boo.github.io/blob/gh-pages/assets/images/euler_identity.png?raw=true">
-</p>
-
 Knowing this, it's no surprise that Euler has become an idol and a role model to any aspiring mathematician (or engineer, or physicist, or...). The [Project Euler](https://projecteuler.net/) is one of many tributes that has been made dedicated to Euler, inicially created as a subsection of our colleages in [mathschallenge](mathschallenge.net) (a brilliant website to learn and enjoy mathematics). <span class="evidence">The Project Euler is a combination of mathematical problems that exists to encourage, challenge, and develop the skills and enjoyment of anyone with an interest in the fascinating world of mathematics.</span>
 
-In this page you will find my personal solutions to the problems, using only Python. They have been part of my process trying to learn Python and so, code can be messy or not optimized (sorry in advance). <span class="evidence"> However, every solution is not just plain code, as **I've written small explanations on every line, so that it can serve as a Python learning experience for other people, just as it was for me**.</span> Also, problems relying on tricky or advanced mathematics have a brief theorical explanation too. 
+In this page you will find my personal solutions to the problems, using only Python. They have been part of my process trying to learn Python and so, code can be messy or not optimized (sorry in advance). <span class="evidence">**Every solution comes with small explanations, so it can serve as a Python learning experience, just as it was for me.**</span> Also, problems relying on tricky or advanced mathematics have a brief theorical explanation too. 
 
 **I strongly encourage you to try and solve the problems without looking at any solution**. Even if at first sight a problem feels overwhelming, give it a try and come back a few days later. You will be surprised at all the things you are capable of doing and you will learn even more. 
 
