@@ -17,18 +17,13 @@ externalLink: false
 
 [Rosalind Franklin](https://www.rfi.ac.uk/about/rosalind-franklin/) was an outstanding, successful researcher in several fields of knowledge. Specifically, she made great contributions to the understanding of the fine molecular structures of DNA, RNA, viruses, coal and graphite. 
 
-<p align="center">
-  <img src="https://github.com/David-boo/David-Boo.github.io/blob/gh-pages/assets/images/Rosalind_Franklin.jpg?raw=true">
-</p>
-
-
 Franklin is best known for her work on the [X-ray diffraction images of DNA](https://www.rosalindfranklinsociety.org/rosalind-franklin) which led to discovery of DNA double helix. Her X-ray diffraction images confirming the helical structure of DNA were shown to Watson without her approval or knowledge, and gave birth to Crick and Watson's 1953 hypothesis regarding the structure of DNA. Her work was published third, in the series of three DNA Nature articles, led by the paper of Watson and Crick which only hinted at her contribution to their hypothesis. 
 
 Rosalind Franklin is often associated only to this infamous event, and that is really unfair considering how great of a scientific (and role model) she was. The [Rosalind Project](http://rosalind.info/about/) is just a small tribute to her importance. <span class="evidence">**Rosalind is a platform for learning bioinformatics through computational problems of varying difficulty that are extracted from real challenges of molecular biology**.</span>
 
-Created by the University of California at San Diego and Saint Petersburg Academic University, and inspired on the [Project Euler](https://david-boo.github.io//project-euler-solutions/), Rosalind try inspire a new generation of bioinformatics students to develop vital programming skills at their own pace in a unique environment. However, most of the times students without a coding background (such as biology-focused students) tend to be afraid and end up not learning and developing new programming skills.
+Created by the University of California at San Diego and Saint Petersburg Academic University, and inspired on the [Project Euler](https://david-boo.github.io//project-euler-solutions/), Rosalind try inspire a new generation of bioinformatics students to develop vital programming skills at their own pace in a unique environment. 
 
-In this page you will find my personal solutions to the problems, using only Python. They have been part of my process trying to learn Python and so, code can be messy or not optimized (sorry in advance). <span class="evidence">Every solution is not just plain code, as **I've written small explanations on every line, so it can serve as a Python learning experience for other bio-focused studentes, just as it was for me**.</span> Also, I've tried to include simple, brief explanations of most common biology terms, aimed at students that may be lacking in this area (IT background students).
+In this page you will find my personal solutions to the problems, using only Python. They have been part of my process trying to learn Python and so, code can be messy or not optimized (sorry in advance). <span class="evidence">**Every solution comes with small explanations, so it can serve as a Python learning experience, just as it was for me**.</span> Also, I've tried to include simple, brief explanations of some biology concepts that can be tricky to understand.
 
 **I strongly encourage you to try and solve the problems without looking at any solution**. Even if at first sight a problem feels overwhelming, give it a try and come back a few days later. You will be surprised at all the things you are capable of doing and you will learn even more. 
 
