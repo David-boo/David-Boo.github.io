@@ -12,7 +12,7 @@ star: false
 category: blog
 hidden: false
 author: davidboo
-description: Biopython tutorial and quick tips
+description: An in-depth Biopython tutorial with explanations and coding examples
 ---
 Biopython is a Python library for reading and writing many common biological data formats.
 
@@ -35,7 +35,6 @@ Biopython is a Python library that allows us to perform bioinformatics computati
    * Finding the starting index of a subsequence
    * Writing sequences to a file
    * Converting a FASTQ file to FASTA file & other formats
-   * Separate sequences by ids from a list of ids
 
 #### 3. NCBI Entrez databases
    * General Guidelines
@@ -226,68 +225,79 @@ print("CAC index:", seq_example.find("CAC"))
 
 **Writing sequences to a file**
 
-SeqIO (Sequence Input/Output) package can be used to write sequences to files. Our main function is ```SeqIO.write()``` used as:
+SeqIO (Sequence Input/Output) can also be used to write sequences to files. Our main function is ```SeqIO.write()``` and it allows you to save sequences as well as id or descriptions (See below for instructions on how to enter Genbank and other NCBI tools). Here is an example:
 
 ```python
-SeqIO.write(records, file, format)
-```
-
-Where records will be a list of sequence records you wish to save, file is a file open for writing and format should be ‘fasta’.
-
-ME QUEDO AQUÍ DAVID
-
-```python
-from Bio import SeqIO
+from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
-from Bio.Alphabet import generic_dna
-sequences = ["AAACGTGG", "TGAACCG", "GGTGCA", "CCAATGCG"]
-records = (SeqRecord(Seq(seq, generic_dna), str(index)) for index,seq in enumerate(sequences))
-with open("example.fasta", "w") as output_handle:
-    SeqIO.write(records, output_handle, "fasta")
-# This code will result in a FASTA file with sequence ids starting from 0. If you want to give a custom id and a description you can create the records as follows.
-sequences = ["AAACGTGG", "TGAACCG", "GGTGCA", "CCAATGCG"]
-new_sequences = []
-i=1
-for sequence in sequences:
-    record = SeqRecord(sequence, id="Seq_"+str(i), name="Seq_"+str(i), description="<custom description>")
-    new_sequences.append(record)
-with open("example.fasta", "w") as output_handle:
-    SeqIO.write(new_sequences, output_handle, "fasta")
-# The SeqIO.write() function will return the number of sequences written.
+from Bio import SeqIO
+
+rec1 = SeqRecord(
+    Seq(
+        "MMYQQGCFAGGTVLRLAKDLAENNRGARVLVVCSEITAVTFRGPSETHLDSMVGQALFGD"
+        "GAGAVIVGSDPDLSVERPLYELVWTGATLLPDSEGAIDGHLREVGLTFHLLKDVPGLISK"
+        "NIEKSLKEAFTPLGISDWNSTFWIAHPGGPAILDQVEAKLGLKEEKMRATREVLSEYGNM"
+        "SSAC",
+    ),
+    id="gi|14150838|gb|AAK54648.1|AF376133_1",
+    description="chalcone synthase [Cucumis sativus]",
+)
+
+rec2 = SeqRecord(
+    Seq(
+        "YPDYYFRITNREHKAELKEKFQRMCDKSMIKKRYMYLTEEILKENPSMCEYMAPSLDARQ"
+        "DMVVVEIPKLGKEAAVKAIKEWGQ",
+    ),
+    id="gi|13919613|gb|AAK33142.1|",
+    description="chalcone synthase [Fragaria vesca subsp. bracteata]",
+)
+
+rec3 = SeqRecord(
+    Seq(
+        "MVTVEEFRRAQCAEGPATVMAIGTATPSNCVDQSTYPDYYFRITNSEHKVELKEKFKRMC"
+        "EKSMIKKRYMHLTEEILKENPNICAYMAPSLDARQDIVVVEVPKLGKEAAQKAIKEWGQP"
+        "KSKITHLVFCTTSGVDMPGCDYQLTKLLGLRPSVKRFMMYQQGCFAGGTVLRMAKDLAEN"
+        "NKGARVLVVCSEITAVTFRGPNDTHLDSLVGQALFGDGAAAVIIGSDPIPEVERPLFELV"
+        "SAAQTLLPDSEGAIDGHLREVGLTFHLLKDVPGLISKNIEKSLVEAFQPLGISDWNSLFW"
+        "IAHPGGPAILDQVELKLGLKQEKLKATRKVLSNYGNMSSACVLFILDEMRKASAKEGLGT"
+        "TGEGLEWGVLFGFGPGLTVETVVLHSVAT",
+    ),
+    id="gi|13925890|gb|AAK49457.1|",
+    description="chalcone synthase [Nicotiana tabacum]",
+)
+
+my_records = [rec1, rec2, rec3]
+SeqIO.write(my_records, "seq_examples.faa", "fasta")
 ```
+
+Output will be a fasta file with your sequences and records in a fasta file.  
 
 **Converting a FASTQ file to FASTA file & other formats**
 
-We need to convert DNA data file formats in certain applications. For example, we can do file format conversions from FASTQ to FASTA as follows.
+We need to convert DNA data file formats in certain applications. You can use ```SeqIO.write()``` but the easiest way to perform this common task is just ```SeqIO.convert()``` . See this example changing GenBank format to FASTA:
+
 ```python
 from Bio import SeqIO
-with open("path/to/fastq/file.fastq", "r") as input_handle, open("path/to/fasta/file.fasta", "w") as output_handle:
-    sequences = SeqIO.parse(input_handle, "fastq")        
-    count = SeqIO.write(sequences, output_handle, "fasta")        
-print("Converted %i records" % count)
-```
-If you want to convert a GenBank file to FASTA format,
-```python
-from Bio import SeqIO
-with open("path/to/genbank/file.gb", "rU") as input_handle, open("path/to/fasta/file.fasta", "w") as output_handle:
-    sequences = SeqIO.parse(input_handle, "genbank")
-    count = SeqIO.write(sequences, output_handle, "fasta")
+count = SeqIO.convert("ls_orchid.gbk", "genbank", "orchid_converted.fasta", "fasta")
 print("Converted %i records" % count)
 ```
 
-**Separate sequences by ids from a list of ids**
+Same concept, converting from FASTQ to FASTA as follows.
 
-Assume that you have a list of sequence identifiers in a file named list.lst where you want to separate the corresponding sequences from a FASTA file. You can run the following and write those sequences to a file.
 ```python
 from Bio import SeqIO
-ids = set(x[:-1] for x in open(path+"list.lst"))
-with open(path+'list.fq', mode='a') as my_output:
-    
-    for seq in SeqIO.parse(path+"list_sequences.fq", "fastq"):
-        
-        if seq.id in ids: 
-            my_output.write(seq.format("fastq"))
+count = SeqIO.convert("ls_orchid.fastq", "fastq", "orchid_converted.fasta", "fasta")
+print("Converted %i records" % count)
 ```
+
+See help function to have a complete list of conversions you can do:
+
+```python
+from Bio import SeqIO
+help(SeqIO.convert)
+```
+
+***
 
 This is a wrap for this post! I hope you got an idea on how to use basic Biopython for sequence works. 
 
@@ -322,13 +332,36 @@ Let's do an example accessing PubMed. We will be searching in PubMed for 20 publ
 from Bio import Entrez
 Entrez.email = "davidboo@example.com"
 handle = Entrez.esearch(db="pubmed", term="breast[title] AND cancer[title]", retmax=20, rettype="fasta", retmode="text")
-record = Entrez.read(handle)
-print(record["IdList"])
+records = Entrez.read(handle)
+print(records["IdList"])
 ```
-handle = Entrez.esearch(db="value", term="keywords", retmax=100)
+If you want to retrieve a full record from Entrez, then you should use ```Bio.Entrez.efetch()```
 
-ME QUEDO AQUÍ DAVID
+```python
+from Bio import Entrez
+Entrez.email = "davidboo@example.com"
+handle = Entrez.efetch(db="nucleotide", id="KY398842.1", rettype="gb", retmode="text")
+print(handle.read())
+```
 
+If you fetch the record in one of the formats accepted by ```Bio.SeqIO```, you could directly parse it into a ```SeqRecord```:
+
+```python
+from Bio import SeqIO
+from Bio import Entrez
+Entrez.email = "davidboo@example.com"
+handle = Entrez.efetch(db="nucleotide", id="KY398842.1", rettype="gb", retmode="text")
+record = SeqIO.read(handle, "genbank")
+handle.close()
+print(record.id)
+>>> KY398842.1
+print(record.name)
+>>> KY398842
+print(record.description)
+>>> Rabbit hemorrhagic disease virus isolate RHDV BZ/2015 capsid structural protein VP60 gene, partial cds.
+record.seq
+>>> Seq('ATGGAGGGCAAAGCCCGCACAGCGCCGCAAGGCGAAGCAGCAGGCACTGCTAC...TGA')
+```
 ---
 
 
