@@ -47,10 +47,10 @@ Biopython is a Python library that allows us to perform bioinformatics computati
    * Other sequence search tools: SearchIO (QueryResult, Hit...)
    
 #### 5. Multiple Sequence Alignment
-   * Reading a MSA
-   * Creating an alignment using different algorithms: ClustalW, MUSCLE...
    * Pairwise sequence alignment
-   
+   * Multiple sequence alignment: creating alignment using different algorithms: ClustalW, MUSCLE...
+   * Reading a MSA
+
 #### 6. Phylogenetics
    * Constructing a phylogenetic tree
    * Modifying an existing tree
@@ -376,15 +376,26 @@ from Bio.Blast import NCBIXML
 blast_records = NCBIXML.read(result_handle)
 ```
 
-You can get the alignments from blast_record.alignments.
+You can also parse a BLAST XML output and get other important parameters, such as Length or e-value as follows:
+
 ```python
-print("Alignments for sequence", blast_record.query)
-for alignment in blast_record.alignments:
-    print("Accession number:", alignment.accession)
-    print("Sequence:", alignment.title)
-    print("Length:", alignment.length)
-    print()
+>>> from Bio.Blast import NCBIXML
+>>> result_handle = open("seq_example.xml")
+>>> blast_record = NCBIXML.read(result_handle)
+>>> for alignment in blast_record.alignments:
+     for hsp in alignment.hsps:
+         if hsp.expect < 1e-10:
+            print('Seq:', alignment.title)
+            print('Length:', alignment.length)
+            print('e-value:', hsp.expect)
+            print(hsp.query)
+            print(hsp.match)
+            print(hsp.sbjct)
 ```
+
+ME QUEDO AQUÍ DAVID
+
+
 You can list the various attributes of each object using the dir() function.
 If you have multiple query sequences, you can parse the result as follows.
 
@@ -407,55 +418,91 @@ a
 
 #### 5. Multiple Sequence Alignment
 
-**Reading a MSA**
-
-aa
-
-**Creating an alignment using different algorithms: ClustalW, MUSCLE...**
-
-We can perform multiple sequence alignment (MSA) where we compare only more than two sequences. If you want to know more about MSA, you can read my article.
-
-Biopython provides command-line wrappers for MSA tools such as Clustal Omega, T-Coffee, ClustalW and DIALIGN.
-
-For example, if you want to use Clustal Omega, then first, you have to download its precompiled binaries. Then you can get an executable command as follows.
-```python
-from Bio.Align.Applications import ClustalOmegaCommandline
-in_file = "sample.fsa"
-out_file = "aligned.fasta"
-clustalomega_cline = ClustalOmegaCommandline(infile=in_file, outfile=out_file, verbose=True, auto=True)
-print(clustalomega_cline)
-```
-clustalomega_cline will be the command which you have to run. You can simply copy-paste it on your terminal.
-
 **Pairwise sequence alignment**
 
-We will be using the Bio.pairwise2 module for PSA.
+Pairwise sequence alignment methods are used to find the best-matching piecewise (local or global) alignments of two query sequences. In other words, a PSA is a tool used to compare two sequences to identify regions of similarity. We will be using the ```Bio.pairwise2``` module for PSA. Note that also ```Bio.Align.PairwiseAligner``` is available to use and it's faster for really big sequences.
+
+We will be comparing two example sequences, ```seq_example``` and ```seq_example2``` in fasta format.
 
 ```python
 from Bio import pairwise2
-
-# We have two sequences in two files. Let’s read the sequences from the files.
 from Bio import SeqIO
-seq1 = next(SeqIO.parse("seq1.fasta", "fasta"))
-seq2 = next(SeqIO.parse("seq2.fasta", "fasta"))
-
-# Now we can align the two sequences.
-
-alignments = pairwise2.align.globalxx(seq1, seq2)
-
-# Let’s print out the alignment.
-
 from Bio.pairwise2 import format_alignment
-for a in alignments:
-    print(format_alignment(*a))
+
+seq1 = SeqIO.read("seq_example.faa", "fasta")
+seq2 = SeqIO.read("seq_example2.faa", "fasta")
+alignments = pairwise2.align.globalxx(seq1.seq, seq2.seq)
+print(alignments)
 ```
-You can do a local alignment of the two sequences as follows.
+
+As you can see, in ```pairwise2.align.globalxx``` we find two parameters (written as xx) where you can specify the match score and gap penalties. The match score indicates the compatibility between an alignment of two characters in the sequences, and gap penalties is a negative number to apply when finding gaps between both sequences. You can read more information about this on [Biopython's API](https://biopython.org/docs/1.77/api/Bio.pairwise2.html). Better alignments are usually obtained by penalizing gaps: higher costs for opening a gap and lower costs for extending an existing gap.
+
+Change the scoring scheme as it follows in this example (matching are given +2 points, -1 point for each mismatching character, -0.5 points when opening a gap, and -0.1 points when extending it)
+
+```python
+pairwise2.align.globalms(seq1.seq, seq2.seq, match=2, mismatch=-1, open=-.5, extend=-.1)
+```
+
+If you want do a local alignment of two sub-regions of a pair of sequences similarly, using ```pairwise2.align.localxx```
 ```python
 alignments = pairwise2.align.localxx(seq1, seq2)
 ```
-You can do a global alignment and change the scoring scheme (assign custom values for matches, mismatches and gaps). For example, matching characters are given 2 points, 1 point is deducted for each mismatching character. 0.5 points are deducted when opening a gap, and 0.1 points are deducted when extending it.
+
+For amino acid sequences match scores are usually encoded in matrices like PAM or BLOSUM. Thus, a more meaningful alignment for our example can be obtained by using the BLOSUM62 matrix, together with a gap open penalty of 10 and a gap extension penalty of 0.5. You can read more about amino acid score matrix on this [Nature article](http://bioinfo.ict.ac.cn/~dbu/BioinformaticsCourses/Lectures/BLOSUM.pdf)
+
 ```python
-alignments = pairwise2.align.globalms(seq1, seq2, 2, -1, -0.5, -0.1)
+from Bio import pairwise2
+from Bio import SeqIO
+from Bio.Align import substitution_matrices
+blosum62 = substitution_matrices.load("BLOSUM62")
+seq1 = SeqIO.read("seq_example.faa", "fasta")
+seq2 = SeqIO.read("seq_example2.faa", "fasta")
+alignments = pairwise2.align.globalds(seq1.seq, seq2.seq, blosum62, -10, -0.5)
+```
+
+**Reading a MSA**
+
+There are two functions for reading in sequence alignments, ```Bio.AlignIO.read()``` and ```Bio.AlignIO.parse()```, for files containing one or multiple alignments respectively. Usage is quite straightforward, however, you must include filename and alignment format type. This is one example with Stockholm file format:
+
+```python
+from Bio import AlignIO
+alignment = AlignIO.read("RHDV_example.sth", "stockholm")
+print(alignment)
+```
+And with fasta file format:
+
+```python
+from Bio import AlignIO
+alignment = AlignIO.read("RHDV_example.faa", "fasta")
+print(alignment)
+```
+
+**Multiple sequence alignment: creating alignment using different algorithms: ClustalW, MUSCLE...**
+
+You can create your own multiple sequence alignment (MSA) when you want to compare more than two sequences to find regions with high similarity. The main function for this is ```Bio.AlignIO.write()```. However, Biopython provides command-line wrappers for the most common MSA tools: ClustalW, Clustal-O, MUSCLE, T-Coffee... Every algorithm is different and you should know the most optimal method to use in your case. You can get more information  about algorithms on [this paper](https://www.researchgate.net/publication/10878092_Alignment-free_sequence_comparison_-_A_review). 
+
+For example, if you want to use ClustalW, then first, you have to download its precompiled binaries. Then you can get an executable command as follows.
+
+```python
+from Bio.Align.Applications import ClustalwCommandline
+cline = ClustalwCommandline("clustalw2", infile="seq_example.fasta")
+print(cline)
+```
+And then you just run ```clustalw2``` on your terminal. Another example using Clustal-O:
+
+```python
+from Bio.Align.Applications import ClustalOmegaCommandline
+in_file = "seq_example.fasta"
+out_file = "seq_alignment.phylip"
+clustalomega_cline = ClustalOmegaCommandline(infile=in_file, outfile=out_file, outfmt = 'phylip', verbose=True, auto=False)
+print(clustalomega_cline)
+```
+
+And run ```clustalomega_cline```. You can convert between sequence alignment file formats using Biopython aswell. Here is an example code, from Stockholm format used earlier to ClustalW format:
+
+```python
+from Bio import AlignIO
+count = AlignIO.convert("RHDV_example.sth", "stockholm", "RHDV_example.aln", "clustal")
 ```
 
 ---
