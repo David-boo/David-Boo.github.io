@@ -17,7 +17,7 @@ description: An in-depth Biopython tutorial with explanations and coding example
 
 Welcome back to another post about Biopython. Biopython is a Python library for reading and writing many common biological data formats and on this post we will be explaining some basic and advanced concepts and tricks. It is a extremely powerful library which provides a wide range of functions and can be used from working with sequences to evolutionary genomics or structural proteomics. And many more!
 
-These are the contents we will be covering. If you haven’t read (part 1)[] of this tutorial, I highly recommend it! I hope you enjoy and learn something new today.
+These are the contents we will be covering. If you haven’t read [part 1](https://david-boo.github.io//biopython-tutorial-first/) of this tutorial, I highly recommend it! I hope you enjoy and learn something new today.
 
 #### 1. First Steps
    * What is Biopython
