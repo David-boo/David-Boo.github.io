@@ -290,6 +290,8 @@ Phylo.draw(tree)
 
 ***
 
-This is a wrap for this post! I hope you got an idea on how to use basic Biopython for sequence works. 
+This is a wrap for this post! I hope you liked it. 
 
-Thank you for reading. Feel free to check out our next post for more information on Biopython. Let me know if you have any feedback or issues, I'd love to hear from you!
+Thank you for reading. Feel free to check out other posts about Biopython and many other things. 
+
+Let me know if you have any feedback or issues, I'd love to hear from you!
