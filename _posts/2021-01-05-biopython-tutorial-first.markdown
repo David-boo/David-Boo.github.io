@@ -44,7 +44,6 @@ Biopython is a Python library that allows us to perform bioinformatics computati
 #### 4. BLAST
    * Running a web BLAST
    * Parsing a BLAST output
-   * Other sequence search tools: SearchIO (QueryResult, Hit...)
    
 #### 5. Multiple Sequence Alignment
    * Pairwise sequence alignment
@@ -290,10 +289,9 @@ with open(path+'list.fq', mode='a') as my_output:
             my_output.write(seq.format("fastq"))
 ```
 
-#Final Thoughts
-#Hope you got an idea of how to use Seq, SeqRecord and SeqIO Biopython functions and will be useful for your research work.
-#Thank you for reading. I would love to hear your thoughts. Stay tuned for the next part of this article with more usages and Biopython functions.
-#Cheers, and stay safe!
+This is a wrap for this post! I hope you got an idea on how to use basic Biopython for sequence works. 
+
+Thank you for reading. Feel free to check out our next post for more information on Biopython. Let me know if you have any feedback or issues, I'd love to hear from you!
 
 ---
 
@@ -379,10 +377,10 @@ blast_records = NCBIXML.read(result_handle)
 You can also parse a BLAST XML output and get other important parameters, such as Length or e-value as follows:
 
 ```python
->>> from Bio.Blast import NCBIXML
->>> result_handle = open("seq_example.xml")
->>> blast_record = NCBIXML.read(result_handle)
->>> for alignment in blast_record.alignments:
+from Bio.Blast import NCBIXML
+result_handle = open("seq_example.xml")
+blast_record = NCBIXML.read(result_handle)
+for alignment in blast_record.alignments:
      for hsp in alignment.hsps:
          if hsp.expect < 1e-10:
             print('Seq:', alignment.title)
@@ -392,29 +390,7 @@ You can also parse a BLAST XML output and get other important parameters, such a
             print(hsp.match)
             print(hsp.sbjct)
 ```
-
-ME QUEDO AQUÍ DAVID
-
-
-You can list the various attributes of each object using the dir() function.
-If you have multiple query sequences, you can parse the result as follows.
-
-```python
-blast_records = NCBIXML.parse(result_handle)
-# You can use a for loop to access the records as follows.
-for blast_record in blast_records:
-    print("BLAST result for sequence:", blast_record.query)
-    print("Number of alignments:", len(blast_record.alignments))
-    print()
-```
-You can read more about how to use Biopython with BLAST from the Biopython Tutorial and Cookbook.
-
-**Other sequence search tools: SearchIO (QueryResult, Hit...)**
-
-a
-
 ---
-
 
 #### 5. Multiple Sequence Alignment
 
@@ -512,8 +488,31 @@ count = AlignIO.convert("RHDV_example.sth", "stockholm", "RHDV_example.aln", "cl
 
 **Constructing a phylogenetic tree**
 
-Phylogenetic trees represent evolutionary relationships between organisms or genes. We can use the Bio.Phylo module for this.
-As an example, we will consider the sequences in a file named as msa.phy that can be found in the official biopython test material for tree construction. Make sure to download the msa.phy file.
+A phylogenetic tree is a branching diagram that represents evolutionary relationships among organisms or genes. They depict the evolution of a set of taxa from their most recent common ancestor (MRCA). It is one of the most important studies to perform in evolutionary genomics. You can read more about phylogenetic trees [here](https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/phylogenetic-tree).
+
+In Biopython, we can use ```Bio.Phylo``` module to create our own tree. As an example we will create a tree from a example file ([download here](http://biopython.org/DIST/docs/tutorial/Tutorial.html#sec249), from Biopython's API) named ```simple.dnd``` in Newick format.
+
+```python
+from Bio import Phylo
+tree = Phylo.read("simple.dnd", "newick")
+```
+
+Using ```draw_ascii``` we can get a simple plain text dendrogram
+
+```python
+from Bio import Phylo
+tree = Phylo.read("simple.dnd", "newick")
+Phylo.draw_ascii(tree)
+```
+
+However you can get a prettier tree using [matplotlib](https://matplotlib.org), a library for creating visualizations in Python
+
+```python
+tree.rooted = True
+Phylo.draw(tree)
+```
+
+Exactly as in MSA, there are three main categories of algorithms avaliable to construct a phylogenetic tree: Distance-based methods, Maximum Parsimony (MP) methods and probabilistic methods. You can read more about the differences [here](https://en.wikipedia.org/wiki/Tree_alignment). Biopython allows you to choose the model you want to use with ```DistanceTreeConstructor``` and ```ParsimonyTreeConstructor``` such as:
 
 ```python
 from Bio import Phylo
@@ -521,22 +520,46 @@ from Bio.Phylo.TreeConstruction import DistanceCalculator
 from Bio.Phylo.TreeConstruction import DistanceTreeConstructor
 from Bio import AlignIO
 
-# Let’s read the sequences from msa.phy and align them.
-aln = AlignIO.read('msa.phy', 'phylip')
-# We have to get the distance matrix.
-calculator = DistanceCalculator('identity')
-dm = calculator.get_distance(aln)
-# Now we can construct the phylogenetic tree.
+alignment = AlignIO.read('simple.dnd', 'newick')
 constructor = DistanceTreeConstructor()
+calculator = DistanceCalculator('identity')
+dm = calculator.get_distance(alignment)
 tree = constructor.upgma(dm)
-# We can draw the phylogenetic tree on the terminal.
 Phylo.draw_ascii(tree)
+```
+The output is an UPGMA tree created from our input file. If you want to get a Neighbour Joining tree (which is a Distance based method) just do:
+
+```python
+njtree = constructor.nj(dm)
+print(njtree)
 ```
 
 **Modifying an existing tree**
 
-aaa
+The simplest way to get an overview of a tree object is to print it as we saw earlier:
+
+```python
+from Bio import Phylo
+tree = Phylo.read("simple.dnd", "newick")
+print(tree)
+```
+
+If you have your tree in a PhyloXML format, you can color different branches or apply different widths. Please note that you can still save a tree as Newick, but the color and width values will be skipped in the output file. To apply colors just do:
    
+```python
+tree = tree.as_phyloxml()
+tree.root.color = "gray"
+Phylo.draw(tree)
+```
+
+Colors for a clade are treated as cascading down through the entire clade, so when we colorize the root here, it turns the whole tree gray. We can override that by assigning a different color lower down on the tree using:
+
+```python
+tree.clade[0, 1].color = "blue"
+tree.clade[2, 3].color = "red"
+Phylo.draw(tree)
+```
+
 ---
 
 
