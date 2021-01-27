@@ -1,15 +1,16 @@
 ---
-title: "Rosalind: A step-by-step Python solution to common bioinformatic problems"
+title: "Rosalind: Python solutions to common problems in Bioinformatics"
 layout: post
 date: 2021-01-03 22:10
 tag:
 - Bioinformatics
 - Python
+- Rosalind
 image: /assets/images/Rosalind_Logo.jpg
 headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
-description: "A step-by-step Python solution to common bioinformatic problems."
+description: "My personal Python solutions to the Rosalind project, consisting of several bioinformatics challenges ."
 category: project
 author: davidboo
 externalLink: false
@@ -47,22 +48,22 @@ And just remember, if everything goes wrong, here you'll find some help. :)
 |FIBD|[Mortal Fibonacci Rabbits](http://rosalind.info/problems/fibd/)|[Rosalind_FIBD](https://github.com/David-boo/Rosalind/blob/main/Rosalind_FIBD.py)|
 |IEV|[Calculating Expected Offspring](http://rosalind.info/problems/iev/)|[Rosalind_IEV](https://github.com/David-boo/Rosalind/blob/main/Rosalind_IEV.py)|
 |LIA|[Independent Alleles](http://rosalind.info/problems/lia/)|[Rosalind_LIA](https://github.com/David-boo/Rosalind/blob/main/Rosalind_LIA.py)|
-|GRPH|[Overlap Graphs](http://rosalind.info/problems/grph/)|[8898](http://rosalind.info/problems/grph/recent/)|
-|LCSM|[Finding a Shared Motif](http://rosalind.info/problems/lcsm/)||
-|MPRT|[Finding a Protein Motif](http://rosalind.info/problems/mprt/)||
-|MRNA|[Inferring mRNA from Protein](http://rosalind.info/problems/mrna/)||
-|ORF|[Open Reading Frames](http://rosalind.info/problems/orf/)||
-|PERM|[Enumerating Gene Orders](http://rosalind.info/problems/perm/)||
-|PRTM|[Calculating Protein Mass](http://rosalind.info/problems/prtm/)||
-|REVP|[Locating Restriction Sites](http://rosalind.info/problems/revp/)||
-|SPLC|[RNA Splicing](http://rosalind.info/problems/splc/)||
-|PROB|[Introduction to Random Strings](http://rosalind.info/problems/prob/)||
-|LEXF|[Enumerating k-mers Lexicographically](http://rosalind.info/problems/lexf/)||
-|LGIS|[Longest Increasing Subsequence](http://rosalind.info/problems/lgis/)||
-|LONG|[Genome Assembly as Shortest Superstring](http://rosalind.info/problems/long/)||
-|PMCH|[Perfect Matchings and RNA Secondary Structures](http://rosalind.info/problems/pmch/)||
-|PPER|[Partial Permutations](http://rosalind.info/problems/pper/)||
-|SIGN|[Enumerating Oriented Gene Orderings](http://rosalind.info/problems/sign/)||
+|GRPH|[Overlap Graphs](http://rosalind.info/problems/grph/)|[Rosalind_GRPH](https://github.com/David-boo/Rosalind/blob/main/Rosalind_GRPH.py)|
+|LCSM|[Finding a Shared Motif](http://rosalind.info/problems/lcsm/)|[Rosalind_LCSM](https://github.com/David-boo/Rosalind/blob/main/Rosalind_LCSM.py)|
+|MPRT|[Finding a Protein Motif](http://rosalind.info/problems/mprt/)|[Rosalind_MPRT](https://github.com/David-boo/Rosalind/blob/main/Rosalind_MPRT.py)|
+|MRNA|[Inferring mRNA from Protein](http://rosalind.info/problems/mrna/)|[Rosalind_MRNA](https://github.com/David-boo/Rosalind/blob/main/Rosalind_MRNA.py)|
+|ORF|[Open Reading Frames](http://rosalind.info/problems/orf/)|[Rosalind_ORF](https://github.com/David-boo/Rosalind/blob/main/Rosalind_ORF.py)|
+|PERM|[Enumerating Gene Orders](http://rosalind.info/problems/perm/)|[Rosalind_PERM](https://github.com/David-boo/Rosalind/blob/main/Rosalind_PERM.py)|
+|PRTM|[Calculating Protein Mass](http://rosalind.info/problems/prtm/)|[Rosalind_PRTM](https://github.com/David-boo/Rosalind/blob/main/Rosalind_PRTM.py)|
+|REVP|[Locating Restriction Sites](http://rosalind.info/problems/revp/)|[Rosalind_REVP](https://github.com/David-boo/Rosalind/blob/main/Rosalind_REVP.py)|
+|SPLC|[RNA Splicing](http://rosalind.info/problems/splc/)|[Rosalind_SPLC](https://github.com/David-boo/Rosalind/blob/main/Rosalind_SPLC.py)|
+|PROB|[Introduction to Random Strings](http://rosalind.info/problems/prob/)|[Rosalind_PROB](https://github.com/David-boo/Rosalind/blob/main/Rosalind_PROB.py)|
+|LEXF|[Enumerating k-mers Lexicographically](http://rosalind.info/problems/lexf/)|[Rosalind_LEXF](https://github.com/David-boo/Rosalind/blob/main/Rosalind_LEXF.py)|
+|LGIS|[Longest Increasing Subsequence](http://rosalind.info/problems/lgis/)|[Rosalind_LGIS](https://github.com/David-boo/Rosalind/blob/main/Rosalind_LGIS.py)|
+|LONG|[Genome Assembly as Shortest Superstring](http://rosalind.info/problems/long/)|[Rosalind_LONG](https://github.com/David-boo/Rosalind/blob/main/Rosalind_LONG.py)|
+|PMCH|[Perfect Matchings and RNA Secondary Structures](http://rosalind.info/problems/pmch/)|[Rosalind_PMCH](https://github.com/David-boo/Rosalind/blob/main/Rosalind_PMCH.py)|
+|PPER|[Partial Permutations](http://rosalind.info/problems/pper/)|[Rosalind_PPER](https://github.com/David-boo/Rosalind/blob/main/Rosalind_PPER.py)|
+|SIGN|[Enumerating Oriented Gene Orderings](http://rosalind.info/problems/sign/)|[Rosalind_SIGN](https://github.com/David-boo/Rosalind/blob/main/Rosalind_SIGN.py)|
 |SSEQ|[Finding a Spliced Motif](http://rosalind.info/problems/sseq/)||
 |TRAN|[Transitions and Transversions](http://rosalind.info/problems/tran/)||
 |TREE|[Completing a Tree](http://rosalind.info/problems/tree/)||
