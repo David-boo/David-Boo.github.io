@@ -30,6 +30,8 @@ In this page you will find my personal solutions to the problems, using only Pyt
 
 And just remember, if everything goes wrong, here you'll find some help. :)
 
+_This project is still a work in progress. Make sure to come back frecuently for the lastest updates!_
+
 ---
 
 
