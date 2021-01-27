@@ -10,13 +10,13 @@ image: /assets/images/euler_painting.png
 headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
-description: "A step-by-step Python solution to common mathematical problems."
+description: "My personal Python solutions to Project Euler, a compilation of mathematical problems."
 category: project
 author: davidboo
 externalLink: false
 ---
   
-[Leonhard Euler (1707-1783)](https://www.euler-foundation.org/?page_id=45) was, without any doubt, one of the greatest mathematicians of all time. He is absolutely the most prolific, writing over 900 publications of work in different science fields, such as number theory, graph theory, analysis, physics, astronomy... Matter of fact, [an active effort](https://en.wikipedia.org/wiki/List_of_things_named_after_Leonhard_Euler) was made to avoid naming everything after Euler and several theorems are attributed to the first person to have proved them after him. 
+[Leonhard Euler (1707-1783)](https://www.euler-foundation.org/?page_id=45) was, without any doubt, one of the greatest mathematicians of all time. He is absolutely the most prolific, writing over 900 publications of work in different science fields (number theory, graph theory, analysis, physics, astronomy...). Matter of fact, [an active effort](https://en.wikipedia.org/wiki/List_of_things_named_after_Leonhard_Euler) was made to avoid naming everything after Euler and several theorems are attributed to the first person to have proved them after him. 
 
 Knowing this, it's no surprise that Euler has become an idol and a role model to any aspiring mathematician (or engineer, or physicist, or...). The [Project Euler](https://projecteuler.net/) is one of many tributes that has been made dedicated to Euler, inicially created as a subsection of our colleages in [mathschallenge](mathschallenge.net) (a brilliant website to learn and enjoy mathematics). <span class="evidence">The Project Euler is a combination of mathematical problems that exists to encourage, challenge, and develop the skills and enjoyment of anyone with an interest in the fascinating world of mathematics.</span>
 
