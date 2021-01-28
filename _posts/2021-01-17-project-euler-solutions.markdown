@@ -1,7 +1,7 @@
 ---
 title: "Project Euler: a Python (beginner friendly) approach to complex mathematical challenges"
 layout: post
-date: 2021-01-03 22:10
+date: 2021-01-17 22:10
 tag:
 - Python
 - Mathematics
