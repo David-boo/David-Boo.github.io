@@ -1,7 +1,7 @@
 ---
 title: "Rosalind: Python solutions to common problems in Bioinformatics"
 layout: post
-date: 2021-01-03 22:10
+date: 2021-01-23 22:10
 tag:
 - Bioinformatics
 - Python
