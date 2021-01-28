@@ -13,7 +13,7 @@ hidden: true # don't count this post in blog pagination
 description: "My personal Python solutions to Project Euler, a compilation of mathematical problems."
 category: project
 author: davidboo
-externalLink: true
+externalLink: false
 ---
   
 [Leonhard Euler (1707-1783)](https://www.euler-foundation.org/?page_id=45) was, without any doubt, one of the greatest mathematicians of all time. He is absolutely the most prolific, writing over 900 publications of work in different science fields (number theory, graph theory, analysis, physics, astronomy...). Matter of fact, [an active effort](https://en.wikipedia.org/wiki/List_of_things_named_after_Leonhard_Euler) was made to avoid naming everything after Euler and several theorems are attributed to the first person to have proved them after him. 
