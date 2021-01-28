@@ -5,7 +5,6 @@ bio: Where biology, informatics & statistics intersect
 # twitter summary info
 description: Where biology, informatics & statistics intersect
 
-
 # if it's an external image, update below for true
 # better with square images
 external-image: false
@@ -131,8 +130,6 @@ plugins:
 
 jekyll-mentions:
   base_url: https://github.com
-
-<meta property="og:image" content="assets/images/preview.png">
 
 compress_html:
   ignore:
